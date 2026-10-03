@@ -22,15 +22,42 @@ used. Must stay free to run (no paid services) and scale comfortably for
    (auto-captured, not manual-only).
 2. **Affiliate auth**: standard Supabase Auth email + password (same pattern
    as the main site's `/admin` login), not magic-link or PIN-based.
-3. **Attribution mechanism**: URL query param (`?ref=CODE`) + cookie only —
-   no manual code-entry field on the form.
-4. **Attribution window**: 90 days.
-5. **PII exposure to affiliates**: masked (e.g. "J*** T., j***@gmail.com")
-   until a lead's status is updated to `active_customer`, then full details
-   unlock. Enforced at the data layer, not just hidden in the UI.
-6. **Commission tracking**: yes, track a commission rate/amount per signup
-   now (even though actual payouts happen manually outside the system for
-   now).
+3. **Attribution mechanism** *(revised 2026-10-03, was link-only)*:
+   `?ref=CODE` link + cookie **or** the affiliate's promo code typed into a
+   new field on the main site's enquiry form. A typed code beats a link if
+   they point at different affiliates. Record which method attributed each
+   signup (`link` / `promo_code`) to spot leaked codes.
+4. **Attribution window** *(revised, was 90 days)*: **14 days** for links.
+   Anything outside the window without the code typed is unattributed —
+   intentionally kept as company revenue (stated in affiliate T&Cs).
+5. **PII exposure to affiliates** *(revised)*: **always masked, never
+   unlocked**. Per name part: 1 letter shown as-is; 2–4 letters → first
+   letter + `*`; 5+ letters → first 3 + `*`. Mobile → last 4 digits.
+   Email → first 5 chars of local part (even if that shows all of a short
+   local part — acceptable since the domain is fully censored), domain
+   fully censored. Master admin sees everything unmasked.
+   Late payment = more than 3 days after due date.
+   **Full details ARE stored** in the affiliate DB (accounting: matching
+   payments to signups, future billing/invoicing system). Affiliates only
+   ever read through the masking function, never the raw columns.
+6. **Commission** *(approved 2026-10-03)*: % of the customer's first full
+   month's net rent — **1–10 = 10%, 11–30 = 20%, 31+ = 35%**, tier by
+   qualified referrals in a rolling 12 months. Qualifies after **60 days in
+   good standing** (no late payment, default, cancellation), or for storage
+   under 60 days, on **successful outbound** from the warehouse. **Paid 30
+   days after qualifying.** Payouts manual for now.
+6b. **Future**: lightweight one-click billing/invoicing system tying the
+    main site, affiliate system and payments together (user wants this
+    built with Claude later) — design tables with that in mind.
+6c. **Security**: user wants the anti-ghost-signup layers back-checked and
+    mutation-tested with ~100 cases before go-live.
+6d. **T&Cs**: drafts in `docs/affiliate-terms-draft.md` and
+    `docs/customer-terms-draft.md` (adapted from EZ Storage's `tandc.txt`;
+    adds moving-partner outsourcing + indemnity; warehousing 100% in-house).
+    Integration design: `docs/main-site-integration.md`.
+6a. **Referred customer offer** (placeholder): 1 month free on a 4-month
+    commitment (current public promo: 1 month free on 8-month lock-in).
+    Admin fee + security deposit treatment TBC.
 7. **Affiliate onboarding**: self-serve application form (public), but the
    application sits as `pending` until master admin manually approves it —
    not auto-approved.
@@ -45,30 +72,22 @@ used. Must stay free to run (no paid services) and scale comfortably for
     purchase), since the business doesn't yet control `storagespace.com.sg`'s
     DNS to carve out a subdomain there.
 
-## Current blocker (unresolved — needs user decision)
+## Infrastructure (resolved 2026-10-03)
 
-Tried to provision the new Supabase project and hit: **the Supabase org
-("hello@level95media.com's Org") is capped at 2 active free projects**, and
-it's already at that cap:
-- `ecostorage` (ACTIVE_HEALTHY) — the main site, must stay.
-- `nkoptics-site` (ACTIVE_HEALTHY) — unrelated project, not EcoStorage.
-- `EZStorage` (INACTIVE/paused) — unclear if safe to delete, not confirmed.
+Supabase free-project cap worked around with a second account the user owns:
+- Supabase project **EcoStorage Affiliates** (`fbprauhmowkfjqtbjuvv`,
+  ap-southeast-1) in **jonnylim-level95media's Org**, linked locally via the
+  Supabase CLI (logged in as jonnylim). The claude.ai Supabase MCP connector
+  stays on hello@ (main `ecostorage` project) — use the CLI for this one.
+- GitHub: `jonnylim-level95media/ecostorage-affiliates` (private). Repo-local
+  git identity is jonnylim; global identity and `D:\EcoStorage` stay hello@.
+  No global `gh` credential helper (deliberate, keeps accounts separate).
+- Pushes / history rewrites are run by the user (auto mode blocks them).
+- No Docker locally, so migrations can't be tested on a local stack — they
+  go straight to the (empty) remote project.
 
-Options given to the user, awaiting their choice:
-1. Pause or delete `EZStorage` to free a slot (fastest, but needs the user
-   to confirm it's actually unused — not something to touch unilaterally).
-2. Upgrade the Supabase org to a paid plan (lifts the cap, but conflicts
-   with the "stays free" requirement).
-3. Fall back to sharing the `ecostorage` Supabase project after all
-   (abandons full data isolation, contradicts decision #9 above).
-
-**Next step once unblocked**: run `create_project` (name
-`ecostorage-affiliates`, region `ap-southeast-1` to match the main site's
-Singapore-local latency) via the Supabase MCP tool, then build out the
-schema below.
-
-## Planned database schema (designed, not yet applied — pending the project
-unblock above)
+## Planned database schema (designed, being revised for the decisions above
+— first migration drafted, not yet applied)
 
 Same role-system pattern already retrofitted onto the main `ecostorage`
 project (worth copying here since this is a fresh database starting from
@@ -115,9 +134,12 @@ section) is finalized.
 - **Cross-project webhook**: main site's `/api/inquiries` (in
   `D:\EcoStorage`) needs to read the `?ref=` cookie and, if present, POST
   the lead to a new endpoint on this affiliate system's API so it can
-  create an `affiliate_signups` row. Needs an auth scheme between the two
-  systems (e.g. a shared secret header) since they're on separate
-  Supabase/Vercel projects with no built-in trust relationship.
+  create an `affiliate_signups` row. Auth (decided): HMAC-SHA256 signature
+  over `timestamp.rawBody` using a shared secret held as an env var on both
+  Vercel projects; reject if older than 5 min; idempotent on the main
+  site's inquiry ID. Plus Turnstile on the enquiry form, self-referral and
+  duplicate-customer checks, and the 60-day hold as anti-ghost-signup
+  layers.
 - Next.js app scaffold for this project (not yet run — `create-next-app`
   or hand-rolled to match the main site's conventions: App Router,
   TypeScript, Tailwind, `@/` path aliases).

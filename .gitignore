@@ -1,3 +1,6 @@
 # Secrets / local env
 .env.local
 .env*.local
+
+# Source T&Cs from sister company (contains staff names/numbers)
+tandc.txt
