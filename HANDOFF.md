@@ -51,6 +51,21 @@ used. Must stay free to run (no paid services) and scale comfortably for
     built with Claude later) — design tables with that in mind.
 6c. **Security**: user wants the anti-ghost-signup layers back-checked and
     mutation-tested with ~100 cases before go-live.
+6e. **Rates are private** *(2026-10-03)*: no rates/tiers/payout timing on
+    the public site. Public `/partner` page is benefit-led only (main-site
+    task: `D:\EcoStorage\HANDOFF-partner-page.md`). Affiliate terms are
+    not public; they're accepted inside the portal.
+6f. **Automated onboarding** *(2026-10-03)*: admin approves an application
+    with **one click** → system creates the auth user via
+    `inviteUserByEmail` (set-password email), creates `affiliate_profiles`,
+    generates their code, and emails a **basic onboarding package** (welcome,
+    rates/tiers, payout timing, 60-day rule, their link + code, share
+    templates, do's & don'ts, terms link). On first login the affiliate must
+    accept the current terms version (click-wrap) **before their code is
+    activated**. Store acceptances in a `terms_acceptances` table
+    (affiliate, terms_version, accepted_at, ip/user agent). Onboarding
+    content is versioned/editable by admin, not hardcoded. Email via Resend
+    (same provider as main site; separate API key/domain TBC).
 6d. **T&Cs**: drafts in `docs/affiliate-terms-draft.md` and
     `docs/customer-terms-draft.md` (adapted from EZ Storage's `tandc.txt`;
     adds moving-partner outsourcing + indemnity; warehousing 100% in-house).
