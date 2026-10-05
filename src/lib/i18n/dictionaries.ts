@@ -131,7 +131,7 @@ const zhHans: Dictionary = {
       pending: "待确认",
       qualified: "已达标",
       paid: "已支付",
-      forfeited: "已取消",
+      forfeited: "已失效",
       ineligible: "不符合资格",
     },
   },
@@ -144,10 +144,10 @@ const zhHans: Dictionary = {
     termsTitle: "推广伙伴协议",
     termsVersion: "版本 {version}",
     translationNotice:
-      "本中文译本仅供参考。如中英文版本有任何不一致，概以英文版本为准。",
+      "本中文译本仅供参考，不具有法律约束力。仅英文版本具有法律约束力；如中英文版本有任何不一致，概以英文版本为准。",
     termsUnavailable: "推广伙伴协议尚未发布。账户可启用时，我们会通过电子邮件通知您。",
     agree: "本人已阅读并同意 EcoStorage 推广伙伴协议（版本 {version}）。",
-    agreeGoverning: "本人理解，如中英文版本有任何不一致，以英文版本为准。",
+    agreeGoverning: "本人理解，本中文译本仅供参考，仅英文版本具有法律约束力。",
     accept: "同意并启用推荐码",
     accepting: "正在启用...",
     acceptError: "出现问题，请重试。",
@@ -162,7 +162,7 @@ const zhHans: Dictionary = {
     shareSocial:
       "新加坡存储小贴士 🏠 EcoStorage 上门取件、存放、送回一站式服务。推荐码 {code}，4 个月方案享 1 个月免费。#推广 {link}",
     disclosureReminder: "公开分享时，请务必说明您可能获得推荐奖励。这是协议要求，也是法律要求。",
-    toDashboard: "进入我的主页",
+    toDashboard: "前往我的主页",
   },
 };
 

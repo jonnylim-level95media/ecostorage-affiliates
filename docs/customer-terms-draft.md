@@ -326,8 +326,9 @@ Singapore law. Disputes within the Small Claims Tribunals' limit shall be
 referred to the Small Claims Tribunals of the State Courts of Singapore;
 otherwise the courts of Singapore have exclusive jurisdiction.
 
-**H9. Language.** This Agreement is written in English. Any translation
-(including Simplified Chinese) is provided for convenience only. If there is
+**H9. Language.** This Agreement is written in English, and only the
+English version is legally binding. Any translation (including Simplified
+Chinese) is provided for reference only and has no legal effect. If there is
 any conflict or inconsistency between the English version and a
 translation, the English version prevails.
 
@@ -357,7 +358,10 @@ translation, the English version prevails.
    fridge guide links pointing to ezstorage.sg) is **not** part of the T&Cs;
    it belongs in a customer move-day guide. Links must be updated to
    EcoStorage's own pages.
-8. **Translations (H9, affiliate §11.2).** The Chinese versions of both
-   agreements must be done by a professional legal translator, not machine
-   translation. The English-prevails clause limits risk but doesn't excuse a
-   misleading translation, especially for consumer-facing terms.
+8. **Translations (H9, affiliate §11.2).** No professional legal translator
+   is available, so Chinese versions are reference-only with an explicit
+   "only English is binding" disclaimer (shown in Chinese and English, plus
+   a separate acknowledgement checkbox for affiliates). Residual risk: a
+   clearly misleading translation could still be argued against us,
+   especially for consumer terms, so keep translations faithful and have a
+   fluent speaker sanity-check them.

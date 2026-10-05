@@ -95,8 +95,8 @@ export function WelcomeFlow({ initialLocale, dictionaries, terms, code, link }: 
                 <p className="rounded-lg border border-accent/40 bg-accent/10 p-3 text-sm">
                   {t.translationNotice}
                   <span lang="en" className="mt-1 block text-muted">
-                    This translation is for reference only. If there is any inconsistency, the English
-                    version prevails.
+                    This translation is for reference only and is not legally binding. Only the English
+                    version is binding.
                   </span>
                 </p>
               )}

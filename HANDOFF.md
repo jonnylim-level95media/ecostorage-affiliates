@@ -72,13 +72,13 @@ used. Must stay free to run (no paid services) and scale comfortably for
     on login and dashboard; first visit guesses from Accept-Language; saved
     to `affiliate_profiles.preferred_locale` once signed in. First login runs
     a 3-step welcome (language → agreement → code reveal + share templates).
-    All UI text lives in `src/lib/i18n/dictionaries.ts` (Chinese needs
-    native-speaker review). Terms are per-locale in `terms_versions`;
+    All UI text lives in `src/lib/i18n/dictionaries.ts` (Chinese UI text reviewed
+    2026-10-06). Terms are per-locale in `terms_versions`;
     **English governs**: a translation is only shown if its version matches
     the current English version (else English is shown), Chinese acceptance
     needs an extra "English prevails" checkbox, and each acceptance records
-    shown locale + governing English version. Legal translations must be
-    professional, not machine.
+    shown locale + governing English version. No professional translator available:
+    Chinese terms are reference-only, "only English is binding" disclaimer.
 6d. **T&Cs**: drafts in `docs/affiliate-terms-draft.md` and
     `docs/customer-terms-draft.md` (adapted from EZ Storage's `tandc.txt`;
     adds moving-partner outsourcing + indemnity; warehousing 100% in-house).

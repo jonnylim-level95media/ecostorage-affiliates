@@ -163,11 +163,13 @@ eligible.
 11.1 **Governing law.** These terms are governed by the laws of Singapore,
 and the courts of Singapore have exclusive jurisdiction.
 
-11.2 **Language.** These terms are written in English. EcoStorage may
-provide a translation (including Simplified Chinese) for convenience only.
-If there is any conflict or inconsistency between the English version and a
-translation, **the English version prevails**. By accepting these terms in
-the affiliate portal, the Affiliate confirms they understand this.
+11.2 **Language.** These terms are written in English, and **only the English
+version is legally binding**. Any translation (including Simplified Chinese)
+is provided for reference only, has no legal effect, and may not be relied
+on to interpret these terms. If there is any conflict or inconsistency
+between the English version and a translation, the English version
+prevails. By accepting these terms in the affiliate portal, the Affiliate
+confirms they understand this.
 
 11.3 **Acceptance.** The Affiliate accepts these terms electronically in the
 affiliate portal. EcoStorage records the version accepted, the language
