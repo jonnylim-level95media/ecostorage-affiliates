@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Tokens match the main EcoStorage site (D:\EcoStorage CLAUDE.md). */
+:root {
+  --background: #0b0f17;
+  --surface: #1f2937;
+  --foreground: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #00e599;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
