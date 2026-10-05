@@ -1,8 +1,8 @@
-export function SignOutButton() {
+export function SignOutButton({ label = "Sign out" }: { label?: string }) {
   return (
     <form action="/auth/signout" method="post">
       <button type="submit" className="rounded-md border border-white/10 px-3 py-1.5 text-sm hover:bg-surface">
-        Sign out
+        {label}
       </button>
     </form>
   );

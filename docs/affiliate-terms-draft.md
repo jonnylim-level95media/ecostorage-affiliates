@@ -160,4 +160,34 @@ eligible.
 
 ## 11. General
 
-These terms are governed by the laws of Singapore.
+11.1 **Governing law.** These terms are governed by the laws of Singapore,
+and the courts of Singapore have exclusive jurisdiction.
+
+11.2 **Language.** These terms are written in English. EcoStorage may
+provide a translation (including Simplified Chinese) for convenience only.
+If there is any conflict or inconsistency between the English version and a
+translation, **the English version prevails**. By accepting these terms in
+the affiliate portal, the Affiliate confirms they understand this.
+
+11.3 **Acceptance.** The Affiliate accepts these terms electronically in the
+affiliate portal. EcoStorage records the version accepted, the language
+shown, and the date, time and IP address of acceptance, and the Affiliate
+agrees this record is evidence of acceptance. Referral Codes are activated
+only after acceptance. If these terms are updated, the Affiliate may be
+asked to accept the new version to keep their Referral Codes active.
+
+11.4 **Entire agreement.** These terms, as accepted in the portal, are the
+entire agreement between the Affiliate and EcoStorage about the Programme
+and replace any earlier discussions, onboarding materials or marketing
+descriptions of the Programme.
+
+11.5 **Severability.** If any provision is found invalid or unenforceable,
+the rest of these terms continue in force.
+
+11.6 **No partnership.** Affiliates are independent contractors. Nothing in
+these terms creates an employment, partnership, agency or joint venture
+relationship, and Affiliates may not bind EcoStorage to any obligation.
+
+11.7 **Confidentiality.** Commission rates, tiers and the contents of the
+onboarding package are confidential and must not be published or shared,
+except as needed to obtain professional (e.g. tax) advice.

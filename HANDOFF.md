@@ -66,6 +66,19 @@ used. Must stay free to run (no paid services) and scale comfortably for
     (affiliate, terms_version, accepted_at, ip/user agent). Onboarding
     content is versioned/editable by admin, not hardcoded. Email via Resend
     (same provider as main site; separate API key/domain TBC).
+6g. **Mandarin (zh-Hans)** *(2026-10-05)*: affiliate-facing UI, emails,
+    onboarding pack and share templates in English + Simplified Chinese;
+    admin console English only. Language picker (`English | 中文`, no flags)
+    on login and dashboard; first visit guesses from Accept-Language; saved
+    to `affiliate_profiles.preferred_locale` once signed in. First login runs
+    a 3-step welcome (language → agreement → code reveal + share templates).
+    All UI text lives in `src/lib/i18n/dictionaries.ts` (Chinese needs
+    native-speaker review). Terms are per-locale in `terms_versions`;
+    **English governs**: a translation is only shown if its version matches
+    the current English version (else English is shown), Chinese acceptance
+    needs an extra "English prevails" checkbox, and each acceptance records
+    shown locale + governing English version. Legal translations must be
+    professional, not machine.
 6d. **T&Cs**: drafts in `docs/affiliate-terms-draft.md` and
     `docs/customer-terms-draft.md` (adapted from EZ Storage's `tandc.txt`;
     adds moving-partner outsourcing + indemnity; warehousing 100% in-house).

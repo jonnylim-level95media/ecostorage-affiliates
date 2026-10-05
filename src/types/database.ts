@@ -23,6 +23,7 @@ export type Database = {
           id: string
           main_site_inquiry_id: string | null
           phone: string | null
+          preferred_locale: Database["public"]["Enums"]["app_locale"]
           promotion_plan: string | null
           review_notes: string | null
           reviewed_at: string | null
@@ -37,6 +38,7 @@ export type Database = {
           id?: string
           main_site_inquiry_id?: string | null
           phone?: string | null
+          preferred_locale?: Database["public"]["Enums"]["app_locale"]
           promotion_plan?: string | null
           review_notes?: string | null
           reviewed_at?: string | null
@@ -51,6 +53,7 @@ export type Database = {
           id?: string
           main_site_inquiry_id?: string | null
           phone?: string | null
+          preferred_locale?: Database["public"]["Enums"]["app_locale"]
           promotion_plan?: string | null
           review_notes?: string | null
           reviewed_at?: string | null
@@ -110,6 +113,7 @@ export type Database = {
           payout_method: string | null
           phone: string | null
           phone_last8: string | null
+          preferred_locale: Database["public"]["Enums"]["app_locale"]
           status: Database["public"]["Enums"]["affiliate_status"]
           updated_at: string
           user_id: string
@@ -126,6 +130,7 @@ export type Database = {
           payout_method?: string | null
           phone?: string | null
           phone_last8?: string | null
+          preferred_locale?: Database["public"]["Enums"]["app_locale"]
           status?: Database["public"]["Enums"]["affiliate_status"]
           updated_at?: string
           user_id: string
@@ -142,6 +147,7 @@ export type Database = {
           payout_method?: string | null
           phone?: string | null
           phone_last8?: string | null
+          preferred_locale?: Database["public"]["Enums"]["app_locale"]
           status?: Database["public"]["Enums"]["affiliate_status"]
           updated_at?: string
           user_id?: string
@@ -384,6 +390,7 @@ export type Database = {
           created_at: string
           id: string
           is_current: boolean
+          locale: Database["public"]["Enums"]["app_locale"]
           subject: string
           version: string
         }
@@ -392,6 +399,7 @@ export type Database = {
           created_at?: string
           id?: string
           is_current?: boolean
+          locale?: Database["public"]["Enums"]["app_locale"]
           subject: string
           version: string
         }
@@ -400,6 +408,7 @@ export type Database = {
           created_at?: string
           id?: string
           is_current?: boolean
+          locale?: Database["public"]["Enums"]["app_locale"]
           subject?: string
           version?: string
         }
@@ -430,24 +439,30 @@ export type Database = {
         Row: {
           accepted_at: string
           affiliate_id: string
+          governing_terms_version_id: string | null
           id: string
           ip_address: unknown
+          locale_shown: Database["public"]["Enums"]["app_locale"]
           terms_version_id: string
           user_agent: string | null
         }
         Insert: {
           accepted_at?: string
           affiliate_id: string
+          governing_terms_version_id?: string | null
           id?: string
           ip_address?: unknown
+          locale_shown?: Database["public"]["Enums"]["app_locale"]
           terms_version_id: string
           user_agent?: string | null
         }
         Update: {
           accepted_at?: string
           affiliate_id?: string
+          governing_terms_version_id?: string | null
           id?: string
           ip_address?: unknown
+          locale_shown?: Database["public"]["Enums"]["app_locale"]
           terms_version_id?: string
           user_agent?: string | null
         }
@@ -457,6 +472,13 @@ export type Database = {
             columns: ["affiliate_id"]
             isOneToOne: false
             referencedRelation: "affiliate_profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "terms_acceptances_governing_terms_version_id_fkey"
+            columns: ["governing_terms_version_id"]
+            isOneToOne: false
+            referencedRelation: "terms_versions"
             referencedColumns: ["id"]
           },
           {
@@ -473,6 +495,7 @@ export type Database = {
           body_md: string
           id: string
           is_current: boolean
+          locale: Database["public"]["Enums"]["app_locale"]
           published_at: string
           version: string
         }
@@ -480,6 +503,7 @@ export type Database = {
           body_md: string
           id?: string
           is_current?: boolean
+          locale?: Database["public"]["Enums"]["app_locale"]
           published_at?: string
           version: string
         }
@@ -487,6 +511,7 @@ export type Database = {
           body_md?: string
           id?: string
           is_current?: boolean
+          locale?: Database["public"]["Enums"]["app_locale"]
           published_at?: string
           version?: string
         }
@@ -498,7 +523,11 @@ export type Database = {
     }
     Functions: {
       accept_current_terms: {
-        Args: { p_ip_address?: unknown; p_user_agent?: string }
+        Args: {
+          p_ip_address?: unknown
+          p_locale: Database["public"]["Enums"]["app_locale"]
+          p_user_agent?: string
+        }
         Returns: undefined
       }
       create_affiliate_from_application: {
@@ -511,6 +540,16 @@ export type Database = {
       }
       current_affiliate_id: { Args: never; Returns: string }
       generate_affiliate_code: { Args: never; Returns: string }
+      get_current_terms: {
+        Args: { p_locale: Database["public"]["Enums"]["app_locale"] }
+        Returns: {
+          body_md: string
+          governing_id: string
+          id: string
+          locale: Database["public"]["Enums"]["app_locale"]
+          version: string
+        }[]
+      }
       get_my_signups: {
         Args: never
         Returns: {
@@ -595,9 +634,14 @@ export type Database = {
           isSetofReturn: false
         }
       }
+      set_my_locale: {
+        Args: { p_locale: Database["public"]["Enums"]["app_locale"] }
+        Returns: undefined
+      }
     }
     Enums: {
       affiliate_status: "invited" | "active" | "suspended" | "terminated"
+      app_locale: "en" | "zh-Hans"
       app_role: "admin" | "affiliate"
       application_status: "pending" | "approved" | "rejected"
       attribution_method: "link" | "promo_code"
@@ -737,6 +781,7 @@ export const Constants = {
   public: {
     Enums: {
       affiliate_status: ["invited", "active", "suspended", "terminated"],
+      app_locale: ["en", "zh-Hans"],
       app_role: ["admin", "affiliate"],
       application_status: ["pending", "approved", "rejected"],
       attribution_method: ["link", "promo_code"],
