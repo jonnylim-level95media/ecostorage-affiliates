@@ -216,7 +216,19 @@ section) is finalized.
   - Upgraded Next 16.3.5 → 16.3.8 (critical RCE advisory GHSA-vcvr-r3jv-pc5j
     in next/og). **The main site is still on 16.3.5 and uses next/og.**
   - `tests/e2e/security.mjs`: 71 live checks, all passing; basis for B7.
-- Next: B4 lead endpoint → B3 approval/onboarding → B4 lead endpoint →
+- **B4 lead endpoint + promo validation: done (2026-10-07).**
+  `POST /api/webhooks/lead` and `POST /api/promo/validate`, both signed
+  (contracts in docs/main-site-integration.md). `ingest_lead()` v2 (migration
+  `20261007020000`) takes both signals (typed code + ref cookie) and decides
+  in the DB under a per-person advisory lock: valid typed code > link within
+  14 days > unattributed; existing customer / self-referral / already
+  referred → recorded, ineligible. Idempotent on main-site inquiry id.
+  Affiliate gets a masked "new referral" email (en/zh) and admin a note,
+  both skipped until Resend. Promo check: 10 per 10 min per visitor IP,
+  never reveals the affiliate. Customer offer constant in `src/lib/offer.ts`.
+  Only a rolled-back DB sanity run so far; full endpoint tests deferred to
+  B7 at the user's request.
+- Next: B5 main-site connection (in D:\EcoStorage) → B3 approval/onboarding → B4 lead endpoint →
   B5 main site → B6 deploy → B7 security tests.
 
 ## Still to design/build (not started)

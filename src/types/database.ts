@@ -596,20 +596,26 @@ export type Database = {
       }
       ingest_lead: {
         Args: {
-          p_code: string
           p_email: string
           p_full_name: string
+          p_is_existing_customer?: boolean
           p_link_clicked_at?: string
           p_main_site_inquiry_id: string
-          p_method: Database["public"]["Enums"]["attribution_method"]
           p_phone: string
+          p_promo_code?: string
           p_quote: Json
+          p_ref_code?: string
           p_source: Database["public"]["Enums"]["lead_source"]
           p_submitted_at: string
         }
-        Returns: string
+        Returns: {
+          attributed: boolean
+          reason: string
+          signup_id: string
+        }[]
       }
       is_admin: { Args: never; Returns: boolean }
+      is_code_redeemable: { Args: { p_code: string }; Returns: boolean }
       mask_email: { Args: { email: string }; Returns: string }
       mask_name: { Args: { full_name: string }; Returns: string }
       mask_phone: { Args: { phone: string }; Returns: string }

@@ -21,7 +21,8 @@ const actionId = (name) => Object.entries(manifest).find(([, v]) => v.exportedNa
 
 let pass = 0, failn = 0;
 const check = (name, ok, detail = "") => {
-  ok ? pass++ : failn++;
+  if (ok) pass++;
+  else failn++;
   console.log((ok ? "PASS" : "FAIL").padEnd(5), name.padEnd(64), ok ? "" : detail);
 };
 

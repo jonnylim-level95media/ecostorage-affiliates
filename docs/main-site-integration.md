@@ -129,3 +129,40 @@ Responses: `201 {id}` · `400 {error}` invalid input (message is safe to
 show) · `401` bad signature (config problem, show a generic error) · `403`
 bot check failed · `409` already pending for this email (show "we already
 have your application") · `413` too large · `429` too many attempts.
+
+## `POST {AFFILIATE_API_URL}/api/webhooks/lead` (built in B4)
+
+Send after saving the enquiry, **only if** it has a typed promo code or an
+`eco_ref` cookie. Signed as above. Body (JSON, max 20 KB):
+
+| Field | Type | Notes |
+|---|---|---|
+| `main_site_inquiry_id` | uuid | required; idempotency key, so retries are safe |
+| `source` | `"contact_form"` \| `"calculator"` | required |
+| `full_name`, `email` | string | required |
+| `phone` | string | optional |
+| `submitted_at` | ISO timestamp | required; within the last 7 days (retry window) |
+| `promo_code` | string | what the visitor typed, if anything (case/spaces ignored) |
+| `ref_code` | string | `eco_ref` cookie value, if present |
+| `link_clicked_at` | ISO timestamp | when the cookie was set (store it in the cookie) |
+| `is_existing_customer` | boolean | true if the email/phone already belongs to a customer on the main site |
+| `quote` | object ≤8 KB | calculator quote details, optional |
+
+The affiliate system decides attribution: a valid typed code wins, else a
+link clicked within 14 days, else unattributed. Self-referrals, existing
+customers and already-referred people are recorded but earn no commission.
+
+Responses: `200 {signup_id, attributed, reason}` (log it; never show
+`reason` to visitors) · `202 {recorded:false}` neither code was usable ·
+`400` · `401` · `413` · `500`. On network errors or 5xx, keep the enquiry
+flagged and retry later (any time within 7 days).
+
+## `POST {AFFILIATE_API_URL}/api/promo/validate` (built in B4)
+
+For the calculator's Apply button. Signed. Body: `{ code, client_ip }`.
+
+Response: `{ valid: false }` or
+`{ valid: true, code: "ABCD2345", offer: { commitment_months: 4, free_months: 1 } }`.
+Use `offer` to show "1 month free on a 4-month plan" and to unlock the
+4-month option. `429` after 10 checks per 10 minutes per visitor. The
+response never identifies the affiliate.
