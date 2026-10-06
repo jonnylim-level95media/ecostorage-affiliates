@@ -81,3 +81,51 @@ directly, which drives the 60-day Good Standing check automatically.
   both individual affiliates and B2B partners; affiliate applicants should
   be routed to the affiliate system's application endpoint
   (`affiliate_applications`), B2B partners stay in main-site `inquiries`.
+
+## Signing spec (implemented in `src/lib/signing.ts`)
+
+Every server-to-server call to this app carries:
+
+```
+X-Eco-Timestamp: <unix seconds>
+X-Eco-Signature: v1=<hex HMAC-SHA256(AFFILIATE_WEBHOOK_SECRET, `${timestamp}.${rawBody}`)>
+Content-Type: application/json
+```
+
+- Sign the **exact bytes** you send (serialize the JSON once, sign that
+  string, send that string).
+- Requests more than 5 minutes off the server clock are rejected (401).
+- Rotation: set `AFFILIATE_WEBHOOK_SECRET_PREVIOUS` on this app to the old
+  secret, update the main site, then remove it.
+
+Reference signer for the main site (Node):
+
+```ts
+import { createHmac } from "node:crypto";
+export function signRequest(rawBody: string, secret: string) {
+  const ts = String(Math.floor(Date.now() / 1000));
+  const sig = createHmac("sha256", secret).update(`${ts}.${rawBody}`).digest("hex");
+  return { "x-eco-timestamp": ts, "x-eco-signature": `v1=${sig}` };
+}
+```
+
+## `POST {AFFILIATE_API_URL}/api/applications` (built in B2)
+
+Body (JSON, max 10 KB):
+
+| Field | Type | Notes |
+|---|---|---|
+| `full_name` | string ≤200 | required |
+| `email` | string | required; one pending application per email |
+| `phone` | string | optional, `+`, digits, spaces, `()-` |
+| `promotion_plan` | string ≤2000 | optional |
+| `contact_consent` | `true` | required (the form checkbox) |
+| `preferred_locale` | `"en"` \| `"zh-Hans"` | defaults to `en`; use the site language the applicant used |
+| `turnstile_token` | string | the form's Turnstile token, **forwarded unverified**. Tokens are single-use, so the main site must not verify it itself |
+| `client_ip` | string | applicant's IP (last `x-forwarded-for` hop); used for Turnstile and a 5/hour per-applicant limit |
+| `main_site_inquiry_id` | uuid | optional, if the main site also stores the submission |
+
+Responses: `201 {id}` · `400 {error}` invalid input (message is safe to
+show) · `401` bad signature (config problem, show a generic error) · `403`
+bot check failed · `409` already pending for this email (show "we already
+have your application") · `413` too large · `429` too many attempts.

@@ -1,0 +1,2 @@
+-- Intentionally empty: created by mistake and already recorded as applied.
+-- The index it was meant to hold is in 20261006040500_application_dedupe_index.sql.

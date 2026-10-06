@@ -174,7 +174,17 @@ section) is finalized.
   admin, service-role client, audit_log entry). Atomic publish via
   `publish_terms_version` / `publish_onboarding_template`. Rent is locked
   once commission leaves `pending`.
-- Next: B2 application intake → B3 approval/onboarding → B4 lead endpoint →
+- **B2 application intake: done (2026-10-06).** `POST /api/applications`,
+  HMAC-signed (`src/lib/signing.ts`, spec in docs/main-site-integration.md),
+  Turnstile verified here (main site forwards token unverified), per-applicant
+  IP limit 5/hr, one pending application per email (DB unique index), admin
+  email via `src/lib/email.ts` (skipped until Resend is configured). Signed
+  server-to-server routes get a 300/min proxy ceiling instead of 20/min since
+  they all come from the main site's IP. Live-tested 22 cases incl. forged,
+  stale, future, tampered, oversize, dedupe, limits, Turnstile pass/fail.
+- Note: migration `20261006035951_application_dedupe.sql` is intentionally
+  empty (created by mistake, already applied); the index is in `..040500`.
+- Next: B3 approval/onboarding → B3 approval/onboarding → B4 lead endpoint →
   B5 main site → B6 deploy → B7 security tests.
 
 ## Still to design/build (not started)

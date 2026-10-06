@@ -3,6 +3,8 @@ import { NextResponse, type NextRequest } from "next/server";
 import { checkRateLimit, clientIp } from "@/lib/rate-limit";
 import { supabasePublishableKey, supabaseUrl } from "@/lib/supabase/env";
 
+const SERVER_TO_SERVER_PREFIXES = ["/api/applications", "/api/webhooks/", "/api/promo/"];
+
 /**
  * Rate-limits the API and login, refreshes the Supabase auth cookie, and
  * bounces signed-out users away from /affiliate and /admin. This is an
@@ -14,7 +16,12 @@ export async function proxy(request: NextRequest) {
   const ip = clientIp(request);
 
   if (pathname.startsWith("/api/")) {
-    const { allowed } = checkRateLimit(`api:${ip}:${pathname}`, 20, 60_000);
+    // Signed server-to-server routes all arrive from the main site's server
+    // IP, so a per-IP limit there would throttle every visitor together.
+    // They're signature-gated and limit per end user internally; this higher
+    // ceiling just stops a runaway caller.
+    const serverToServer = SERVER_TO_SERVER_PREFIXES.some((p) => pathname.startsWith(p));
+    const { allowed } = checkRateLimit(`api:${ip}:${pathname}`, serverToServer ? 300 : 20, 60_000);
     if (!allowed) {
       return NextResponse.json({ error: "Too many requests. Please try again shortly." }, { status: 429 });
     }
