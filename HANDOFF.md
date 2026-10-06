@@ -164,6 +164,19 @@ yet) — regenerate it fresh in this project rather than copy-pasting, since
 table/column choices may evolve once the cross-project webhook design (next
 section) is finalized.
 
+## Build progress
+
+- **B1 admin console: done (2026-10-06).** /admin overview, applications
+  (reject; approve arrives in B3), signups list + detail (edit customer
+  record, qualify, forfeit), payouts (mark paid with reference), terms
+  publishing per locale, onboarding template editor (starter EN/ZH packs
+  prefilled). All writes are server actions → `adminContext()` (re-checks
+  admin, service-role client, audit_log entry). Atomic publish via
+  `publish_terms_version` / `publish_onboarding_template`. Rent is locked
+  once commission leaves `pending`.
+- Next: B2 application intake → B3 approval/onboarding → B4 lead endpoint →
+  B5 main site → B6 deploy → B7 security tests.
+
 ## Still to design/build (not started)
 
 - **Cross-project webhook**: main site's `/api/inquiries` (in

@@ -591,6 +591,23 @@ export type Database = {
       mask_email: { Args: { email: string }; Returns: string }
       mask_name: { Args: { full_name: string }; Returns: string }
       mask_phone: { Args: { phone: string }; Returns: string }
+      publish_onboarding_template: {
+        Args: {
+          p_body_md: string
+          p_locale: Database["public"]["Enums"]["app_locale"]
+          p_subject: string
+          p_version: string
+        }
+        Returns: string
+      }
+      publish_terms_version: {
+        Args: {
+          p_body_md: string
+          p_locale: Database["public"]["Enums"]["app_locale"]
+          p_version: string
+        }
+        Returns: string
+      }
       qualify_signup: {
         Args: { p_signup_id: string }
         Returns: {
