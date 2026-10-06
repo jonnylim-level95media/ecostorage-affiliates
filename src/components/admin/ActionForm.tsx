@@ -32,6 +32,15 @@ export function ActionForm({
         {children}
       </fieldset>
       {state?.ok && <p className="text-sm text-accent">{state.ok}</p>}
+      {state?.link && (
+        <div className="space-y-1 rounded-md border border-amber-400/40 bg-amber-400/10 p-3 text-xs">
+          <p>
+            One-time sign-in link. Send it to the affiliate privately (WhatsApp, email). Anyone with it can set the
+            password, and it&apos;s only shown once.
+          </p>
+          <input readOnly value={state.link} onFocus={(e) => e.currentTarget.select()} className="w-full rounded bg-background px-2 py-1 font-mono" />
+        </div>
+      )}
       {state?.error && (
         <p role="alert" className="text-sm text-red-400">
           {state.error}

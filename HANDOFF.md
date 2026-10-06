@@ -184,7 +184,39 @@ section) is finalized.
   stale, future, tampered, oversize, dedupe, limits, Turnstile pass/fail.
 - Note: migration `20261006035951_application_dedupe.sql` is intentionally
   empty (created by mistake, already applied); the index is in `..040500`.
-- Next: B3 approval/onboarding → B3 approval/onboarding → B4 lead endpoint →
+- **B3 approval/onboarding + security hardening: done (2026-10-06).**
+  - One-click approve (`/admin/applications`): invite → affiliate + inactive
+    code → onboarding email (skipped until Resend) → audit. Rolls back the
+    auth user if profile creation fails. Supabase default email only reaches
+    project team members, so when it can't deliver, the admin is shown a
+    one-time invite link to pass on (`generateLink`). Same fallback for
+    "Send set-password link". `/admin/affiliates`: resend onboarding,
+    set-password link, replace (rotate) code, suspend/reactivate.
+  - Auth (pushed via `supabase config push`): public sign-up OFF, Turnstile
+    captcha on sign-in/reset enforced by Supabase, 12-char passwords with
+    upper/lower/digit, secure password change, email confirmations on,
+    invite/reset links 24h. Admin **2FA (TOTP) required**: `requireAdmin()`
+    redirects to `/mfa/setup` or `/mfa/verify`, and `is_admin()` requires
+    `aal = aal2`, so the DB refuses admin reads from password-only sessions.
+    Lost authenticator: delete the user's row in `auth.mfa_factors` via SQL.
+  - Pages: `/forgot-password`, `/auth/callback` (handles Supabase default
+    email links: ?code or #tokens, strips tokens from URL), `/auth/set-password`,
+    `/auth/confirm` (scanner-safe POST flow for the custom templates).
+  - Custom bilingual templates in `supabase/templates/` are commented out in
+    config.toml: free plan only allows template edits with custom SMTP.
+    **When Resend is set up: configure it as SMTP in Supabase, then
+    uncomment the template blocks and `config push`.** (Push needs
+    `TURNSTILE_SECRET_KEY` exported in the shell, since config.toml reads it.)
+  - Headers: per-request nonce CSP (`strict-dynamic`), HSTS, nosniff,
+    X-Frame-Options DENY, Referrer-Policy, Permissions-Policy, COOP,
+    noindex, `no-store` on authenticated/API routes, no X-Powered-By.
+    Server actions get Next's built-in Origin check; sign-out checks Origin.
+  - Shared Postgres rate limiter `check_rate_limit()` (`src/lib/rate-limit-db.ts`,
+    fails closed): applications 5/hr per applicant IP, 3/day per email.
+  - Upgraded Next 16.3.5 → 16.3.8 (critical RCE advisory GHSA-vcvr-r3jv-pc5j
+    in next/og). **The main site is still on 16.3.5 and uses next/og.**
+  - `tests/e2e/security.mjs`: 71 live checks, all passing; basis for B7.
+- Next: B4 lead endpoint → B3 approval/onboarding → B4 lead endpoint →
   B5 main site → B6 deploy → B7 security tests.
 
 ## Still to design/build (not started)

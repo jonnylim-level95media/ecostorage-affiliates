@@ -4,7 +4,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { readRawBody, verifyRequest } from "@/lib/signing";
 import { verifyTurnstile } from "@/lib/turnstile";
 import { notifyAdmin } from "@/lib/email";
-import { checkRateLimit } from "@/lib/rate-limit";
+import { rateLimit } from "@/lib/rate-limit-db";
 import { isLocale } from "@/lib/i18n/config";
 
 /**
@@ -66,11 +66,13 @@ export async function POST(request: Request) {
   if (!turnstileToken) return bad("Missing bot check token");
 
   // Every request comes from the main site's server, so the proxy's per-IP
-  // limit can't tell applicants apart; limit on the forwarded applicant IP.
-  if (clientIp) {
-    const { allowed } = checkRateLimit(`apply:${clientIp}`, 5, 60 * 60_000);
-    if (!allowed) return bad("Too many applications. Please try again later.", 429);
-  }
+  // limit can't tell applicants apart; limit on the forwarded applicant IP
+  // and the email, in the shared (cross-instance) limiter.
+  const limits = await Promise.all([
+    clientIp ? rateLimit(`apply:ip:${clientIp}`, 5, 60 * 60) : true,
+    rateLimit(`apply:email:${email}`, 3, 24 * 60 * 60),
+  ]);
+  if (limits.includes(false)) return bad("Too many applications. Please try again later.", 429);
 
   if (!(await verifyTurnstile(turnstileToken, clientIp || undefined))) {
     return bad("Bot check failed. Please try again.", 403);

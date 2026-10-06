@@ -1,17 +1,16 @@
 import { LanguageSwitch } from "@/components/LanguageSwitch";
 import { getDictionary } from "@/lib/i18n/server";
-import { LoginForm } from "./LoginForm";
+import { ForgotForm } from "./ForgotForm";
 
-export default async function LoginPage({ searchParams }: PageProps<"/login">) {
+export default async function ForgotPasswordPage() {
   const { locale, t } = await getDictionary();
-  const { error } = await searchParams;
 
   return (
     <main className="relative flex flex-1 items-center justify-center p-6">
       <div className="absolute right-4 top-4">
         <LanguageSwitch current={locale} label={t.common.language} />
       </div>
-      <LoginForm t={t.login} locale={locale} linkError={error === "link"} />
+      <ForgotForm t={t.forgot} captchaError={t.login.captchaError} locale={locale} />
     </main>
   );
 }

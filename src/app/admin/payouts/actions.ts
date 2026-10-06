@@ -1,10 +1,11 @@
 "use server";
 
-import { adminContext, done, fail, text, type ActionState } from "@/lib/admin/actions-common";
+import { adminContext, done, fail, text, uuid, type ActionState } from "@/lib/admin/actions-common";
 
 export async function markPaid(_: ActionState, form: FormData): Promise<ActionState> {
   const { db, audit } = await adminContext();
-  const id = text(form, "id", 64);
+  const id = uuid(form, "id");
+  if (!id) return fail("Invalid request.");
   const reference = text(form, "reference", 200);
   if (!reference) return fail("Enter the PayNow / bank transfer reference.");
 

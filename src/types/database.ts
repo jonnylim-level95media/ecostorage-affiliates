@@ -435,6 +435,24 @@ export type Database = {
         }
         Relationships: []
       }
+      rate_limits: {
+        Row: {
+          count: number
+          key: string
+          window_ends_at: string
+        }
+        Insert: {
+          count: number
+          key: string
+          window_ends_at: string
+        }
+        Update: {
+          count?: number
+          key?: string
+          window_ends_at?: string
+        }
+        Relationships: []
+      }
       terms_acceptances: {
         Row: {
           accepted_at: string
@@ -529,6 +547,10 @@ export type Database = {
           p_user_agent?: string
         }
         Returns: undefined
+      }
+      check_rate_limit: {
+        Args: { p_key: string; p_limit: number; p_window_seconds: number }
+        Returns: boolean
       }
       create_affiliate_from_application: {
         Args: {
@@ -650,6 +672,14 @@ export type Database = {
           isOneToOne: true
           isSetofReturn: false
         }
+      }
+      rotate_affiliate_code: {
+        Args: { p_affiliate_id: string }
+        Returns: string
+      }
+      set_affiliate_suspended: {
+        Args: { p_affiliate_id: string; p_suspended: boolean }
+        Returns: Database["public"]["Enums"]["affiliate_status"]
       }
       set_my_locale: {
         Args: { p_locale: Database["public"]["Enums"]["app_locale"] }

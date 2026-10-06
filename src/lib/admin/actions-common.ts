@@ -5,7 +5,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import type { Json } from "@/types/database";
 
 /** Result shape every admin server action returns, shown by <ActionForm>. */
-export type ActionState = { ok?: string; error?: string } | null;
+export type ActionState = { ok?: string; error?: string; link?: string } | null;
 
 /**
  * Every admin mutation goes through here: re-checks the caller is an admin
@@ -34,6 +34,9 @@ export function done(message: string): ActionState {
   return { ok: message };
 }
 
+/** Codes meaning Supabase's built-in email can't deliver (pre-Resend SMTP). */
+export const EMAIL_UNDELIVERABLE = new Set(["email_address_not_authorized", "over_email_send_rate_limit"]);
+
 export function fail(message: string): ActionState {
   return { error: message };
 }
@@ -41,6 +44,14 @@ export function fail(message: string): ActionState {
 export function text(form: FormData, key: string, max = 10_000) {
   const value = String(form.get(key) ?? "").trim();
   return value.length > max ? value.slice(0, max) : value;
+}
+
+const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+/** Form field that must be a UUID; returns "" if it isn't. */
+export function uuid(form: FormData, key: string) {
+  const value = text(form, key, 36);
+  return UUID.test(value) ? value : "";
 }
 
 const SG_DATE = /^\d{4}-\d{2}-\d{2}$/;

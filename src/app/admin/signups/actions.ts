@@ -1,13 +1,14 @@
 "use server";
 
-import { adminContext, done, fail, sgDate, text, type ActionState } from "@/lib/admin/actions-common";
+import { adminContext, done, fail, sgDate, text, uuid, type ActionState } from "@/lib/admin/actions-common";
 import { Constants, type Database } from "@/types/database";
 
 type SignupStatus = Database["public"]["Enums"]["signup_status"];
 
 export async function updateSignup(_: ActionState, form: FormData): Promise<ActionState> {
   const { db, audit } = await adminContext();
-  const id = text(form, "id", 64);
+  const id = uuid(form, "id");
+  if (!id) return fail("Invalid request.");
 
   const status = text(form, "status", 20) as SignupStatus;
   if (!Constants.public.Enums.signup_status.includes(status)) return fail("Invalid status.");
@@ -55,7 +56,8 @@ export async function updateSignup(_: ActionState, form: FormData): Promise<Acti
 
 export async function qualifySignup(_: ActionState, form: FormData): Promise<ActionState> {
   const { db, audit } = await adminContext();
-  const id = text(form, "id", 64);
+  const id = uuid(form, "id");
+  if (!id) return fail("Invalid request.");
 
   const { data, error } = await db.rpc("qualify_signup", { p_signup_id: id });
   // qualify_signup raises readable messages (not pending, 60 days not reached, …).
@@ -72,7 +74,8 @@ export async function qualifySignup(_: ActionState, form: FormData): Promise<Act
 
 export async function forfeitSignup(_: ActionState, form: FormData): Promise<ActionState> {
   const { db, audit } = await adminContext();
-  const id = text(form, "id", 64);
+  const id = uuid(form, "id");
+  if (!id) return fail("Invalid request.");
   const reason = text(form, "reason", 500);
   if (!reason) return fail("A reason is required.");
 

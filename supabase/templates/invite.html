@@ -1,0 +1,18 @@
+<!-- Invite email for approved affiliates. The link goes to our own /auth/confirm
+     route (token_hash flow), which works with server-side sessions. -->
+<div style="font-family: Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif; max-width: 520px; color: #111827;">
+  <h2>Welcome to EcoStorage Affiliates</h2>
+  <p>Your affiliate application has been approved. Click below to set your password and activate your account.</p>
+  <p>
+    <a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=invite"
+       style="display: inline-block; background: #00e599; color: #0b0f17; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">
+      Set my password · 设置密码
+    </a>
+  </p>
+  <p style="font-size: 13px; color: #6b7280;">This link works once and expires in 24 hours. If it has expired, reply to this email and we'll send a new one.</p>
+  <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 24px 0;" />
+  <h2>欢迎加入 EcoStorage 推广伙伴计划</h2>
+  <p>您的推广伙伴申请已获批准。请点击上方按钮设置密码并启用账户。</p>
+  <p style="font-size: 13px; color: #6b7280;">此链接仅可使用一次，24 小时内有效。如已过期，请回复本邮件，我们会重新发送。</p>
+  <p style="font-size: 12px; color: #9ca3af;">If you didn't apply to the EcoStorage affiliate programme, you can ignore this email. · 如您未申请，请忽略本邮件。</p>
+</div>

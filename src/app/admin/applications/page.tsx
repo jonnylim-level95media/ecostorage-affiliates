@@ -2,7 +2,7 @@ import { requireAdmin } from "@/lib/auth";
 import { ActionForm } from "@/components/admin/ActionForm";
 import { Badge, Button, Card, Empty, inputClass } from "@/components/admin/ui";
 import { fmtDate } from "@/lib/admin/format";
-import { rejectApplication } from "./actions";
+import { approveApplication, rejectApplication } from "./actions";
 
 export default async function ApplicationsPage() {
   const { supabase } = await requireAdmin();
@@ -37,9 +37,14 @@ export default async function ApplicationsPage() {
               {a.promotion_plan && <p className="whitespace-pre-wrap text-sm">{a.promotion_plan}</p>}
 
               <div className="flex flex-wrap items-start gap-3">
-                <Button disabled title="One-click approval is added in the next build step (B3)">
-                  Approve
-                </Button>
+                <ActionForm
+                  action={approveApplication}
+                  confirm={`Approve ${a.full_name}? This emails them an invitation and creates their referral code.`}
+                  className="space-y-1"
+                >
+                  <input type="hidden" name="id" value={a.id} />
+                  <Button>Approve</Button>
+                </ActionForm>
                 <ActionForm action={rejectApplication} confirm="Reject this application?" className="flex flex-1 flex-wrap gap-2">
                   <input type="hidden" name="id" value={a.id} />
                   <input name="notes" placeholder="Rejection notes (internal)" className={`${inputClass} min-w-48 flex-1`} />
