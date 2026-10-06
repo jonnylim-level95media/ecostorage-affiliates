@@ -66,7 +66,13 @@ used. Must stay free to run (no paid services) and scale comfortably for
     (affiliate, terms_version, accepted_at, ip/user agent). Onboarding
     content is versioned/editable by admin, not hardcoded. Email via Resend
     (same provider as main site; separate API key/domain TBC).
-6g. **Mandarin (zh-Hans)** *(2026-10-05)*: affiliate-facing UI, emails,
+6h. **Customer late fees** *(2026-10-06)*: cumulative from due date:
+    30d S$50; 45d +S$100; 60d +1 month's fee; 75d Notice of Default.
+    Disposal/claims right from 45d (after written notice). "Late" for the
+    affiliate good-standing test is still >3 days. Legal entity/UEN TBD.
+    Resend parked until a new domain is bought; A7 (new Supabase keys)
+    skipped as non-critical.
+ (zh-Hans)** *(2026-10-05)*: affiliate-facing UI, emails,
     onboarding pack and share templates in English + Simplified Chinese;
     admin console English only. Language picker (`English | 中文`, no flags)
     on login and dashboard; first visit guesses from Accept-Language; saved
@@ -85,7 +91,8 @@ used. Must stay free to run (no paid services) and scale comfortably for
     Integration design: `docs/main-site-integration.md`.
 6a. **Referred customer offer** (placeholder): 1 month free on a 4-month
     commitment (current public promo: 1 month free on 8-month lock-in).
-    Admin fee + security deposit treatment TBC.
+    Admin fee + security deposit are standard charges for every customer,
+    never discounted by referral offers, and excluded from commission.
 7. **Affiliate onboarding**: self-serve application form (public), but the
    application sits as `pending` until master admin manually approves it —
    not auto-approved.

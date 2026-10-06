@@ -52,7 +52,8 @@ Affiliate, are not eligible.
 ## 4. Referred Customer Offer
 
 4.1 Referred Customers receive **[1 month free storage]** on a minimum
-**[4-month]** commitment. [Admin fee and security deposit treatment: TBC.]
+**[4-month]** commitment. The offer applies to storage fees only; the standard admin fee and
+security deposit apply to every customer in full and are not discounted.
 
 4.2 The offer cannot be combined with other promotions unless stated, and is
 subject to EcoStorage's standard customer terms.

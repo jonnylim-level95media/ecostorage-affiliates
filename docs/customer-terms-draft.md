@@ -60,7 +60,10 @@ cancellation or rescheduling, and the cancellation fees in A7 may apply.
 **B1. Fees.** Fees comprise, as applicable: a one-time **admin fee**, a
 refundable **security deposit**, monthly storage fees, moving/service fees
 and add-ons, as set out in your quotation. GST applies to all fees except
-the security deposit.
+the security deposit. The admin fee and security deposit are standard
+charges for every customer, however the customer was referred; promotional
+and referral offers apply to storage fees only and never waive or reduce
+the admin fee or security deposit.
 
 **B2. Storage billing.** Storage billing starts on the first day your items
 arrive at our facility and recurs monthly. Prorated amounts apply for items
@@ -77,15 +80,26 @@ month / the billing date stated on your invoice]**. Payment instructions:
 +65 XXXX XXXX]**.
 
 **B5. Late payment.** A payment not received **3** days after its due date
-is late. The Company may:
-  (a) charge a late fee of **[S$X / X% per month]** on overdue amounts;
-  (b) suspend access to, retrieval of, and services for your items until all
-  overdue amounts are paid; and
-  (c) if any amount remains unpaid for **30 days** after its due date, give
-  you written notice at your last known contact details, and if the amount
-  is still unpaid **[14]** days after that notice, sell or dispose of the
-  stored items to recover the amount owed, returning any surplus to you
-  after deducting costs. ⚠
+is late. Overdue amounts attract the following cumulative charges, counted
+from the original due date:
+
+| Days overdue | Charge | Cumulative total |
+|---|---|---|
+| 30 days | S$50 late fee | S$50 |
+| 45 days | further S$100 | S$150 |
+| 60 days | further 1 month's storage fee | S$150 + 1 month's storage fee |
+| 75 days | Notice of Default issued | S$150 + 1 month's storage fee |
+
+In addition, the Company may:
+  (a) from the due date, suspend access to, retrieval of, and services for
+  your items until all overdue amounts and charges are paid;
+  (b) from **45 days** overdue, after giving you written notice at your last
+  known contact details and at least **[14]** days to pay, sell or
+  otherwise lawfully dispose of the stored items to recover the amounts
+  owed (returning any surplus to you after deducting costs), and bring
+  claims for the amounts owed and any damages; and
+  (c) from **75 days** overdue, issue a Notice of Default, terminate this
+  Agreement and pursue recovery of all amounts owed. ⚠
 Any promotional discounts or free months may be withdrawn if the account is
 in arrears.
 
@@ -343,8 +357,15 @@ translation, the English version prevails.
    blanket exclusions are likely unenforceable and also contradicted EZ
    Storage's own later "Limitation of Liability" clause. Replaced with a
    capped liability (F1) — **needs a cap figure and lawyer sign-off.**
-2. **Disposal of goods (B5c, C10).** EZ Storage said "potential disposal
-   after 30 days"; added a written-notice step to make this defensible.
+2. **Late fees and disposal (B5, C10).** Tiered schedule per business
+   decision (S$50 at 30 days, +S$100 at 45, +1 month's fee at 60, default
+   notice at 75; disposal/claims right from 45 days). Two lawyer checks:
+   (i) Singapore still applies the traditional penalty rule (*Denka
+   Advantech v Seraya Energy* [2020] SGCA 119): a late charge must be a
+   genuine pre-estimate of loss, and the "1 month's fee" tier is the most
+   exposed; (ii) disposal at 45 days is kept behind a written-notice step,
+   which is what makes it defensible. Note the disposal right (45 days)
+   arrives before the formal default notice (75 days) by design.
 3. **Facility access (C4)** conflicts with the website calculator's "No
    Valet — Self-access only" option. Decide which is true.
 4. **Not a bailee (C8)** — carried over; courts may still find a bailment
