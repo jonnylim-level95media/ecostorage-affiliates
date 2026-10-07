@@ -228,7 +228,27 @@ section) is finalized.
   never reveals the affiliate. Customer offer constant in `src/lib/offer.ts`.
   Only a rolled-back DB sanity run so far; full endpoint tests deferred to
   B7 at the user's request.
-- Next: B5 main-site connection (in D:\EcoStorage) → B3 approval/onboarding → B4 lead endpoint →
+- **B5 main-site connection: done locally (2026-10-07), NOT pushed.**
+  D:\EcoStorage commits `6bee9ee` (Next 16.3.8 + sharp/source-map-js fixes)
+  and `d8be0e3` (integration). Main site auto-deploys on push, so it stays
+  unpushed until the affiliate app is deployed (B6). What changed there:
+  ?ref= → 14-day httpOnly `eco_ref` cookie (`CODE.unixtime`, proxy only runs
+  when ?ref present; treated as a disclosed referral cookie, set without
+  consent, no personal data); calculator submits via `/api/inquiries` with
+  the quote recomputed server-side; `/api/promo` proxies code checks;
+  referred enquiries relayed signed via `after()`, state in
+  `inquiries.metadata.affiliate`, daily Vercel cron `/api/cron/affiliate-relay`
+  (CRON_SECRET) retries for 7 days; `/partner` affiliate form →
+  `/api/affiliate-applications` → affiliate system (falls back to a partner
+  inquiry if unreachable); Turnstile on all forms, loaded on first focus,
+  skipped if keys unset; CSP allows challenges.cloudflare.com; cookie +
+  privacy pages updated. Inquiries now written with the service role.
+  `is_existing_customer` is always false for now (no customer records on
+  the main site; wire to billing in B8).
+  **Main-site migration `05_inquiries_server_only_insert.sql` must be
+  applied AFTER the new main-site code is live** (old live calculator
+  inserts from the browser).
+- Next: B6 deploy → B3 approval/onboarding → B4 lead endpoint →
   B5 main site → B6 deploy → B7 security tests.
 
 ## Still to design/build (not started)
