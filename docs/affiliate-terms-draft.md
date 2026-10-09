@@ -89,7 +89,7 @@ not become payable later.
 
 | Tier | Qualified Referrals (rolling 12 months) | Commission |
 |---|---|---|
-| Starter | 1–10 | 10% of the customer's first full month's net rent |
+| Starter | 1–10 | 10% of the First Month's Rent |
 | Partner | 11–30 | 20% |
 | Elite | 31+ | 35% |
 
@@ -97,8 +97,24 @@ The Affiliate's tier is set by the number of Qualified Referrals in the 12
 months before the referral qualifies, including that referral (so the 11th
 Qualified Referral is paid at Partner rate).
 
-6.2 "Net rent" excludes admin fees, security deposits, GST and any free or
-discounted months.
+6.2 **"First Month's Rent"** means the storage fee actually paid by the
+Referred Customer for their first paid month of storage. It excludes the
+administration fee, security deposit, moving, labour and other service
+charges, add-ons, and any free or discounted month. Commission is based on
+the First Month's Rent only. Later upgrades, downgrades or additional
+services do not change it.
+
+6.2A **Short stays.** If the Referred Customer's items are stored for fewer
+than **60 days**, measured by the actual period stored (not the plan
+chosen), commission is a fixed **S$5 for every 20 sq ft** of storage
+rented, or the tier percentage under 6.1 if that is lower. Short-stay
+referrals do not count towards the number of Qualified Referrals used to
+set the Affiliate's tier.
+
+6.2B **Reductions before payout.** If, before the commission is paid, the
+Referred Customer ends their storage or reduces their storage plan by
+half or more, EcoStorage may recalculate the commission on the reduced
+storage fee, or apply the short-stay rate in 6.2A.
 
 6.3 Tier upgrades apply to referrals qualifying after the upgrade; they are
 not applied retroactively.
@@ -108,6 +124,14 @@ not applied retroactively.
 short-term customer's successful outbound), via **[PayNow / bank transfer]**.
 If the Referred Customer defaults on any amount relating to the Qualifying
 Period before payout, the commission is forfeited.
+
+6.4A **Cases not closed.** If any amount owed by the Referred Customer is
+unpaid, disputed or under negotiation, the case is "not closed". While a
+case is not closed, all payments connected with it, including the
+Affiliate's commission, are on hold. Holds are not forfeitures: once the
+case is closed with all amounts paid, the commission becomes payable in the
+next payout cycle. If amounts are written off, EcoStorage may forfeit or
+reduce the commission.
 
 6.5 Affiliates are responsible for any tax on commissions they receive.
 

@@ -164,6 +164,46 @@ yet) — regenerate it fresh in this project rather than copy-pasting, since
 table/column choices may evolve once the cross-project webhook design (next
 section) is finalized.
 
+## Business decisions for Novac (2026-10-09)
+
+- Admin fee: fixed S$30, described as an administration fee (account set-up,
+  inventory/photo records, warehouse security). Not described as insurance;
+  no insurance statement in the customer terms.
+- No GST (not registered). Build GST as a switch, off.
+- Anniversary billing from the customer's on-site signature date (service
+  report signature = services rendered = billing starts). No part-month
+  charges. Upgrade: immediate, daily-prorated difference for rest of cycle,
+  billing date unchanged. Downgrade: next cycle, no refund.
+- Upfront: plans <100 sq ft = 2 months + S$30; >=100 sq ft = 1.5 months +
+  S$30. Deposit = 1 month (<100) / 0.5 month (>=100), on rent before valet.
+  Existing customers upgrading: no extra deposit unless the increase is
+  substantial (admin discretion). Deposit never partly refunded on
+  downgrade. Novac keeps a per-customer deposit ledger (paid, held,
+  refunded; may be 0).
+- Affiliate commission: tier % of the first month's rent actually paid,
+  nothing else, unaffected by later changes. Stays <60 days (actual days
+  stored): fixed S$5 per 20 sq ft or tier %, whichever is lower; short stays
+  don't count toward tiers. Reduction by half or more / end before payout →
+  may recalculate. Not-closed cases (unpaid/disputed/negotiating) hold ALL
+  linked payments (affiliate, mover, EcoStorage revenue); payments received
+  are still recorded. Terms updated in docs/affiliate-terms-draft.md
+  (6.2, 6.2A, 6.2B, 6.4A). DB commission logic NOT yet changed (do with
+  Billing; the rent base will come from paid invoices).
+- Movers: 90% of everything EcoStorage bills for work they perform, rounded
+  UP per job to the nearest S$5. Never show the customer price or the
+  percentage to movers. Paid on a monthly tally; unpaid customer amounts
+  roll over. Job lines editable until the job is closed. Warehouse
+  receiving labour is 100% EcoStorage (own staff).
+- Bookkeeping in Novac (no Xero): invoices, payments, deposits, refunds,
+  payouts, general expenses with multi-image receipts (master admin),
+  bank statement CSV import with suggested matching, monthly reports,
+  accountant export. Not full double-entry/statutory accounts.
+- Job orders get a customer quote-photo upload; Flow broadcast links to them
+  (view-only, per-job, expiring).
+- Data: no purge; state a retention reason (claims) in the privacy policy.
+- Infra goal: start Novac on free tiers only; migrate accounts to an
+  @ecostorage.sg identity.
+
 ## Build progress
 
 - **B1 admin console: done (2026-10-06).** /admin overview, applications

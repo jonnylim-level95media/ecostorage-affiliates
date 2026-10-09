@@ -59,23 +59,55 @@ cancellation or rescheduling, and the cancellation fees in A7 may apply.
 
 **B1. Fees.** Fees comprise, as applicable: a one-time **admin fee**, a
 refundable **security deposit**, monthly storage fees, moving/service fees
-and add-ons, as set out in your quotation. GST applies to all fees except
-the security deposit. The admin fee and security deposit are standard
+and add-ons, as set out in your quotation. The Company is not currently
+registered for GST and no GST is charged. The admin fee and security deposit are standard
 charges for every customer, however the customer was referred; promotional
 and referral offers apply to storage fees only and never waive or reduce
 the admin fee or security deposit.
 
-**B2. Storage billing.** Storage billing starts on the first day your items
-arrive at our facility and recurs monthly. Prorated amounts apply for items
-received mid-cycle. No refunds are given for reduced storage usage
-mid-cycle.
+**B1A. Administration fee.** A one-time, non-refundable administration fee
+of **S$30** is payable for each new storage account, regardless of the
+size of your storage plan. It covers account set-up, inventory
+documentation and photo records of your items, and the security and
+protection measures at our warehouses.
+
+**B2. Storage billing (anniversary billing).** Storage is billed in
+monthly cycles that start on the date you (or your authorised
+representative) sign the service report confirming your items have been
+collected or received. This signature confirms that services have been
+rendered and that billing is in effect. Each later cycle starts on the same
+day of the month (or the last day of a shorter month). Storage fees are
+payable in advance for each full cycle; there are no part-month charges.
+No refunds are given for unused days in a cycle or for reduced storage
+usage mid-cycle.
+
+**B2A. Upfront payment.** Before or on collection, you pay:
+  (a) the first month's storage fee;
+  (b) the security deposit (B6); and
+  (c) the administration fee (B1A).
+For plans under 100 sq ft this is 2 months' storage fees plus the
+administration fee; for plans of 100 sq ft or more it is 1.5 months'
+storage fees plus the administration fee.
+
+**B2B. Changing your storage plan.**
+  (a) **Upgrades** take effect immediately. You pay the difference between
+  the new and old monthly fee, pro-rated by day, for the remainder of your
+  current cycle. Your billing date does not change.
+  (b) **Downgrades** take effect from the start of your next cycle. No
+  refund is given for the current cycle.
+  (c) If you change plan during a minimum commitment period, B7 applies.
+  (d) An additional security deposit is not normally required when an
+  existing customer upgrades. The Company may require one where the
+  increase in stored items is substantial.
+  (e) Your security deposit is not reduced or partly refunded when you
+  downgrade. It is held in full until termination (B6).
 
 **B3. Service billing.** Services are billed before the day of service
 unless otherwise stated.
 
 **B4. Payment terms.** All payments must be made in full without deduction,
-set-off or withholding. Monthly storage fees are due on **[the 1st of each
-month / the billing date stated on your invoice]**. Payment instructions:
+set-off or withholding. Monthly storage fees are due on the first day of
+each billing cycle (B2), as stated on your invoice. Payment instructions:
 **[PayNow / bank transfer details; send proof of payment via WhatsApp to
 +65 XXXX XXXX]**.
 
@@ -103,7 +135,10 @@ In addition, the Company may:
 Any promotional discounts or free months may be withdrawn if the account is
 in arrears.
 
-**B6. Security deposit.** The security deposit is refundable and is returned
+**B6. Security deposit.** The security deposit is **1 month's storage fee**
+for plans under 100 sq ft and **half of 1 month's storage fee** for plans of
+100 sq ft or more, calculated on the storage fee before any valet or
+add-on charges. The security deposit is refundable and is returned
 within 30 days after termination, provided there are no outstanding
 balances and no damage attributable to you. The security deposit **cannot**
 be used to offset termination fees, monthly fees or additional service
@@ -165,8 +200,8 @@ store. ⚠
 
 **C9. Termination of storage.** You may terminate at any time by submitting
 the Termination Request Form with at least **5 working days'** notice.
-Less than 5 working days' notice incurs an urgent handling fee of **S$100
-(before GST)**. All outstanding amounts must be paid at least 3 days before
+Less than 5 working days' notice incurs an urgent handling fee of
+**S$100**. All outstanding amounts must be paid at least 3 days before
 the termination date; move-out will only be scheduled after full payment.
 No refunds are given for prepaid balances, mid-cycle periods or unexpired
 minimum commitment terms. Move-out slots are subject to availability.
