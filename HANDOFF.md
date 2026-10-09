@@ -174,8 +174,13 @@ section) is finalized.
   report signature = services rendered = billing starts). No part-month
   charges. Upgrade: immediate, daily-prorated difference for rest of cycle,
   billing date unchanged. Downgrade: next cycle, no refund.
-- Upfront: plans <100 sq ft = 2 months + S$30; >=100 sq ft = 1.5 months +
-  S$30. Deposit = 1 month (<100) / 0.5 month (>=100), on rent before valet.
+- Upfront = 1st month's rent IN ADVANCE + security deposit + S$30 admin fee.
+  Deposit = 1 month's rent (<100 sq ft) or 0.5 month's rent (>=100 sq ft),
+  on rent before valet. So totals are 2 months + S$30 (<100) and
+  1.5 months + S$30 (>=100), but only the deposit part is refundable; the
+  first month is rent for cycle 1, NOT deposit. Novac must invoice these as
+  separate lines (rent / deposit / admin fee) and only the deposit line goes
+  to the deposit ledger.
   Existing customers upgrading: no extra deposit unless the increase is
   substantial (admin discretion). Deposit never partly refunded on
   downgrade. Novac keeps a per-customer deposit ledger (paid, held,

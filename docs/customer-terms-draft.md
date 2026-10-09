@@ -82,12 +82,17 @@ No refunds are given for unused days in a cycle or for reduced storage
 usage mid-cycle.
 
 **B2A. Upfront payment.** Before or on collection, you pay:
-  (a) the first month's storage fee;
-  (b) the security deposit (B6); and
-  (c) the administration fee (B1A).
-For plans under 100 sq ft this is 2 months' storage fees plus the
-administration fee; for plans of 100 sq ft or more it is 1.5 months'
-storage fees plus the administration fee.
+  (a) your **first month's storage fee in advance**;
+  (b) your **security deposit** (B6), which is refundable; and
+  (c) the **administration fee** (B1A).
+
+| Plan size | First month in advance | Security deposit | Admin fee | Total upfront |
+|---|---|---|---|---|
+| Under 100 sq ft | 1 month's fee | 1 month's fee | S$30 | 2 months' fees + S$30 |
+| 100 sq ft or more | 1 month's fee | ½ month's fee | S$30 | 1.5 months' fees + S$30 |
+
+For example, a plan of S$200 a month under 100 sq ft is S$200 (first
+month) + S$200 (deposit) + S$30 = S$430 upfront.
 
 **B2B. Changing your storage plan.**
   (a) **Upgrades** take effect immediately. You pay the difference between
