@@ -226,6 +226,20 @@ section) is finalized.
 - Hosting stays on Vercel (Hobby while building with zero customers; Pro
   when commercial). Main site: keep its own repo; optionally transfer to
   the @ecostorage.sg GitHub org later (domain unchanged, no SEO impact).
+- (2026-10-09, map review) Additions: affiliate referral countdown (day X
+  of 60 + expected payout date; best case payout ~day 90 after signature);
+  User Portal login by one-time code to the customer's CRM email (no
+  self sign-up; Novac "send portal access" button); quotations alongside
+  invoices (own numbering, editable lines, convert to invoice); each job
+  line marked Partner- or EcoStorage-performed (drives Flow message +
+  mover fee); affiliate onboarding pack auto-sent on approval (content
+  later); payout reports list open (not-closed) cases per partner /
+  affiliate; service report sent on on-site sign-off and the same link
+  updated when warehouse inbound completes (trucks often unload next
+  morning); partner e-signature on service reports; job assignment log
+  (who accepted, when, which number, reassignments); portal billing
+  reminder = email + on-screen countdown. Accounts move to
+  jonnylim@ecostorage.sg, but NOT yet (user not ready to build).
 - Maps: docs/novac/novac-functional-map.(svg|png) and
   docs/novac/novac-technical-map.(svg|png).
 

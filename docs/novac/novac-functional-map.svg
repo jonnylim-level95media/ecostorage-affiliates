@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="3110" height="1284" viewBox="0 0 3110 1284" font-family="Arial, Helvetica, sans-serif">
-<rect width="3110" height="1284" fill="#f8fafc"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="3110" height="1341" viewBox="0 0 3110 1341" font-family="Arial, Helvetica, sans-serif">
+<rect width="3110" height="1341" fill="#f8fafc"/>
 <defs>
 <marker id="a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker>
 <marker id="a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker>
@@ -16,26 +16,26 @@
 <line x1="450.59999999999997" y1="135" x2="496.59999999999997" y2="135" stroke="#ea580c" stroke-width="4"/><text x="506.59999999999997" y="140" font-size="15" fill="#1f2937">Money</text>
 <line x1="561.5999999999999" y1="135" x2="607.5999999999999" y2="135" stroke="#9333ea" stroke-width="4"/><text x="617.5999999999999" y="140" font-size="15" fill="#1f2937">Customer view</text>
 <text x="40" y="180" font-size="14" fill="#64748b">Tags: LIVE = running now · BUILT = done, not yet deployed · v1 = first release · v2 / v3 = later</text>
-<rect x="656" y="220" width="2438" height="1024" rx="22" fill="#eef2ff" stroke="#6366f1" stroke-width="2" stroke-dasharray="10 8"/>
+<rect x="656" y="220" width="2438" height="1081" rx="22" fill="#eef2ff" stroke="#6366f1" stroke-width="2" stroke-dasharray="10 8"/>
 <text x="676" y="250" font-size="17" font-weight="700" fill="#4338ca">Novac: one secure app, one database</text>
-<rect x="16" y="220" width="518" height="1024" rx="22" fill="#ecfdf5" stroke="#10b981" stroke-width="2" stroke-dasharray="10 8"/>
+<rect x="16" y="220" width="518" height="1081" rx="22" fill="#ecfdf5" stroke="#10b981" stroke-width="2" stroke-dasharray="10 8"/>
 <text x="36" y="250" font-size="17" font-weight="700" fill="#047857">Public website (separate app)</text>
-<path d="M510,377.0 C586.5,377.0 603.5,424.5 680,424.5" fill="none" stroke="#16a34a" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-green)"/>
-<path d="M510,454.0 C586.5,454.0 603.5,765.0 680,765.0" fill="none" stroke="#16a34a" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-green)"/>
-<path d="M1150,765.0 C1226.5,765.0 1243.5,415.0 1320,415.0" fill="none" stroke="#2563eb" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-blue)"/>
-<path d="M1790,415.0 C1866.5,415.0 1883.5,415.5 1960,415.5" fill="none" stroke="#2563eb" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-blue)"/>
-<path d="M2430,415.5 C2506.5,415.5 2523.5,364.0 2600,364.0" fill="none" stroke="#2563eb" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-blue)"/>
+<path d="M510,377.0 C586.5,377.0 603.5,453.0 680,453.0" fill="none" stroke="#16a34a" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-green)"/>
+<path d="M510,454.0 C586.5,454.0 603.5,822.0 680,822.0" fill="none" stroke="#16a34a" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-green)"/>
+<path d="M1150,822.0 C1226.5,822.0 1243.5,424.5 1320,424.5" fill="none" stroke="#2563eb" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-blue)"/>
+<path d="M1790,424.5 C1866.5,424.5 1883.5,434.5 1960,434.5" fill="none" stroke="#2563eb" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-blue)"/>
+<path d="M2430,434.5 C2506.5,434.5 2523.5,364.0 2600,364.0" fill="none" stroke="#2563eb" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-blue)"/>
 <path d="M2835.0,522 L2835.0,582" fill="none" stroke="#2563eb" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-blue)"/>
-<path d="M2600,428.0 C2523.5,428.0 2506.5,983.0 2430,983.0" fill="none" stroke="#2563eb" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-blue)"/>
-<path d="M1555.0,560 L1555.0,620" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-orange)"/>
-<path d="M1960,983.0 C1883.5,983.0 1866.5,702.75 1790,702.75" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-orange)"/>
-<path d="M1790,755.5 C1866.5,755.5 1883.5,689.5 1960,689.5" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-orange)"/>
-<path d="M1320,755.5 C1243.5,755.5 1226.5,383.0 1150,383.0" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-orange)"/>
-<path d="M1960,728.0 C1595.5,728.0 1514.5,466.0 1150,466.0" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" stroke-dasharray="9 7" marker-end="url(#a-orange)"/>
-<path d="M1555.0,891 L1555.0,951" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-orange)"/>
-<path d="M1960,766.5 C1883.5,766.5 1866.5,1039.0 1790,1039.0" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-orange)"/>
+<path d="M2600,428.0 C2523.5,428.0 2506.5,1049.5 2430,1049.5" fill="none" stroke="#2563eb" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-blue)"/>
+<path d="M1555.0,579 L1555.0,639" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-orange)"/>
+<path d="M1960,1049.5 C1883.5,1049.5 1866.5,731.25 1790,731.25" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-orange)"/>
+<path d="M1790,793.5 C1866.5,793.5 1883.5,732.25 1960,732.25" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-orange)"/>
+<path d="M1320,793.5 C1243.5,793.5 1226.5,402.0 1150,402.0" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-orange)"/>
+<path d="M1960,775.5 C1595.5,775.5 1514.5,504.0 1150,504.0" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" stroke-dasharray="9 7" marker-end="url(#a-orange)"/>
+<path d="M1555.0,948 L1555.0,1008" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-orange)"/>
+<path d="M1960,818.75 C1883.5,818.75 1866.5,1096.0 1790,1096.0" fill="none" stroke="#ea580c" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-orange)"/>
 <path d="M2835.0,837 L2835.0,777" fill="none" stroke="#9333ea" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-purple)"/>
-<path d="M2600,934.5 C2235.5,934.5 2154.5,808.25 1790,808.25" fill="none" stroke="#9333ea" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-purple)"/>
+<path d="M2600,953.5 C2235.5,953.5 2154.5,855.75 1790,855.75" fill="none" stroke="#9333ea" stroke-width="3.2" stroke-opacity="0.85" marker-end="url(#a-purple)"/>
 <rect x="40" y="270" width="470" height="291" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
 <rect x="40" y="270" width="8" height="291" rx="4" fill="#16a34a"/>
 <text x="56" y="306" font-size="21" font-weight="700" fill="#111827">Public Website</text>
@@ -80,8 +80,8 @@
 <text x="56" y="935" font-size="13" font-weight="700" fill="#0d9488" letter-spacing="0.5">MASTER ADMIN (YOU)</text>
 <text x="56" y="954" font-size="13.5" font-weight="700" fill="#0d9488">•</text>
 <text x="74" y="954" font-size="13.5" fill="#1f2937">Everything, including Vault and Books</text>
-<rect x="680" y="270" width="470" height="309" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
-<rect x="680" y="270" width="8" height="309" rx="4" fill="#16a34a"/>
+<rect x="680" y="270" width="470" height="366" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+<rect x="680" y="270" width="8" height="366" rx="4" fill="#16a34a"/>
 <text x="696" y="306" font-size="21" font-weight="700" fill="#111827">Affiliate Portal</text>
 <rect x="1042.0" y="289" width="92.0" height="23" rx="11" fill="#2563eb"/><text x="1088.0" y="305" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">BUILT · v1</text>
 <text x="696" y="325" font-size="13.5" font-style="italic" fill="#374151">Goal: Partially automated affiliate marketing.</text>
@@ -102,53 +102,58 @@
 <text x="696" y="506" font-size="13.5" font-weight="700" fill="#475569">•</text>
 <text x="714" y="506" font-size="13.5" fill="#1f2937">Payouts held while a case is not closed</text>
 <text x="696" y="525" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="525" font-size="13.5" fill="#1f2937">Notify admin at milestones; one-click &#x27;you&#x27;ve been paid&#x27;</text>
+<text x="714" y="525" font-size="13.5" fill="#1f2937">Countdown per referral: day X of 60, expected payout date</text>
 <text x="696" y="544" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="544" font-size="13.5" fill="#1f2937">Alerts to affiliates on late payment or dropout</text>
-<text x="696" y="563" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="563" font-size="13.5" fill="#1f2937">Monthly affiliate reports, help / FAQ (v2)</text>
-<rect x="680" y="639" width="470" height="252" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
-<rect x="680" y="639" width="8" height="252" rx="4" fill="#2563eb"/>
-<text x="696" y="675" font-size="21" font-weight="700" fill="#111827">Customer CRM</text>
-<rect x="1101.2" y="658" width="32.8" height="23" rx="11" fill="#0f766e"/><text x="1117.6" y="674" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">v1</text>
-<text x="696" y="694" font-size="13.5" font-style="italic" fill="#374151">Goal: One record per customer that everything links to.</text>
-<text x="696" y="723" font-size="13" font-weight="700" fill="#475569" letter-spacing="0.5">FUNCTIONS</text>
-<text x="696" y="742" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="742" font-size="13.5" fill="#1f2937">Customer card: details, plan, size, anniversary billing</text>
-<text x="714" y="761" font-size="13.5" fill="#1f2937">date</text>
-<text x="696" y="780" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="780" font-size="13.5" fill="#1f2937">Internal notes (never visible outside the team)</text>
+<text x="714" y="544" font-size="13.5" fill="#1f2937">Onboarding pack auto-sent on approval (content to be</text>
+<text x="714" y="563" font-size="13.5" fill="#1f2937">written)</text>
+<text x="696" y="582" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="714" y="582" font-size="13.5" fill="#1f2937">Notify admin at milestones; one-click &#x27;you&#x27;ve been paid&#x27;</text>
+<text x="696" y="601" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="714" y="601" font-size="13.5" fill="#1f2937">Alerts to affiliates on late payment or dropout</text>
+<text x="696" y="620" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="714" y="620" font-size="13.5" fill="#1f2937">Monthly affiliate reports, help / FAQ (v2)</text>
+<rect x="680" y="696" width="470" height="252" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+<rect x="680" y="696" width="8" height="252" rx="4" fill="#2563eb"/>
+<text x="696" y="732" font-size="21" font-weight="700" fill="#111827">Customer CRM</text>
+<rect x="1101.2" y="715" width="32.8" height="23" rx="11" fill="#0f766e"/><text x="1117.6" y="731" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">v1</text>
+<text x="696" y="751" font-size="13.5" font-style="italic" fill="#374151">Goal: One record per customer that everything links to.</text>
+<text x="696" y="780" font-size="13" font-weight="700" fill="#475569" letter-spacing="0.5">FUNCTIONS</text>
 <text x="696" y="799" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="799" font-size="13.5" fill="#1f2937">Deposit ledger: paid / held / refunded (can be $0)</text>
-<text x="696" y="818" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="818" font-size="13.5" fill="#1f2937">Upgrade / downgrade of storage plan</text>
+<text x="714" y="799" font-size="13.5" fill="#1f2937">Customer card: details, plan, size, anniversary billing</text>
+<text x="714" y="818" font-size="13.5" fill="#1f2937">date</text>
 <text x="696" y="837" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="837" font-size="13.5" fill="#1f2937">Upgrade tracker to learn deposit rules over time</text>
+<text x="714" y="837" font-size="13.5" fill="#1f2937">Internal notes (never visible outside the team)</text>
 <text x="696" y="856" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="856" font-size="13.5" fill="#1f2937">&#x27;Not closed&#x27; flag with reason; holds all linked payouts</text>
+<text x="714" y="856" font-size="13.5" fill="#1f2937">Deposit ledger: paid / held / refunded (can be $0)</text>
 <text x="696" y="875" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="875" font-size="13.5" fill="#1f2937">Full history: enquiries, jobs, items, invoices</text>
-<rect x="680" y="951" width="470" height="233" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
-<rect x="680" y="951" width="8" height="233" rx="4" fill="#0d9488"/>
-<text x="696" y="987" font-size="21" font-weight="700" fill="#111827">Admin, Security &amp; Alerts</text>
-<rect x="1012.4" y="970" width="121.60000000000001" height="23" rx="11" fill="#2563eb"/><text x="1073.2" y="986" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">BUILT · shared</text>
-<text x="696" y="1006" font-size="13.5" font-style="italic" fill="#374151">Goal: Control who sees what, and know when something breaks.</text>
-<text x="696" y="1035" font-size="13" font-weight="700" fill="#475569" letter-spacing="0.5">FUNCTIONS</text>
-<text x="696" y="1054" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="1054" font-size="13.5" fill="#1f2937">1 master admin + 2 staff, permission toggles</text>
-<text x="696" y="1073" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="1073" font-size="13.5" fill="#1f2937">Two-factor sign-in for admins</text>
-<text x="696" y="1092" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="1092" font-size="13.5" fill="#1f2937">Audit log of every change</text>
+<text x="714" y="875" font-size="13.5" fill="#1f2937">Upgrade / downgrade of storage plan</text>
+<text x="696" y="894" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="714" y="894" font-size="13.5" fill="#1f2937">Upgrade tracker to learn deposit rules over time</text>
+<text x="696" y="913" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="714" y="913" font-size="13.5" fill="#1f2937">&#x27;Not closed&#x27; flag with reason; holds all linked payouts</text>
+<text x="696" y="932" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="714" y="932" font-size="13.5" fill="#1f2937">Full history: enquiries, jobs, items, invoices</text>
+<rect x="680" y="1008" width="470" height="233" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+<rect x="680" y="1008" width="8" height="233" rx="4" fill="#0d9488"/>
+<text x="696" y="1044" font-size="21" font-weight="700" fill="#111827">Admin, Security &amp; Alerts</text>
+<rect x="1012.4" y="1027" width="121.60000000000001" height="23" rx="11" fill="#2563eb"/><text x="1073.2" y="1043" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">BUILT · shared</text>
+<text x="696" y="1063" font-size="13.5" font-style="italic" fill="#374151">Goal: Control who sees what, and know when something breaks.</text>
+<text x="696" y="1092" font-size="13" font-weight="700" fill="#475569" letter-spacing="0.5">FUNCTIONS</text>
 <text x="696" y="1111" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="1111" font-size="13.5" fill="#1f2937">Vault access: master admin only</text>
+<text x="714" y="1111" font-size="13.5" fill="#1f2937">1 master admin + 2 staff, permission toggles</text>
 <text x="696" y="1130" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="1130" font-size="13.5" fill="#1f2937">Email alert on any system failure</text>
+<text x="714" y="1130" font-size="13.5" fill="#1f2937">Two-factor sign-in for admins</text>
 <text x="696" y="1149" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="714" y="1149" font-size="13.5" fill="#1f2937">Email via Resend (app) + Zoho (inboxes); WhatsApp links,</text>
-<text x="714" y="1168" font-size="13.5" fill="#1f2937">later the API</text>
-<rect x="1320" y="270" width="470" height="290" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
-<rect x="1320" y="270" width="8" height="290" rx="4" fill="#2563eb"/>
+<text x="714" y="1149" font-size="13.5" fill="#1f2937">Audit log of every change</text>
+<text x="696" y="1168" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="714" y="1168" font-size="13.5" fill="#1f2937">Vault access: master admin only</text>
+<text x="696" y="1187" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="714" y="1187" font-size="13.5" fill="#1f2937">Email alert on any system failure</text>
+<text x="696" y="1206" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="714" y="1206" font-size="13.5" fill="#1f2937">Email via Resend (app) + Zoho (inboxes); WhatsApp links,</text>
+<text x="714" y="1225" font-size="13.5" fill="#1f2937">later the API</text>
+<rect x="1320" y="270" width="470" height="309" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+<rect x="1320" y="270" width="8" height="309" rx="4" fill="#2563eb"/>
 <text x="1336" y="306" font-size="21" font-weight="700" fill="#111827">Job Orders</text>
 <rect x="1741.2" y="289" width="32.8" height="23" rx="11" fill="#0f766e"/><text x="1757.6" y="305" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">v1</text>
 <text x="1336" y="325" font-size="13.5" font-style="italic" fill="#374151">Goal: Staff create pickups, drop-offs, warehouse receiving</text>
@@ -162,53 +167,58 @@
 <text x="1336" y="449" font-size="13.5" font-weight="700" fill="#475569">•</text>
 <text x="1354" y="449" font-size="13.5" fill="#1f2937">Line items from EcoStorage price list, editable per job</text>
 <text x="1336" y="468" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="468" font-size="13.5" fill="#1f2937">Customer quote-photo upload</text>
+<text x="1354" y="468" font-size="13.5" fill="#1f2937">Each line marked Partner-performed or EcoStorage-performed</text>
 <text x="1336" y="487" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="487" font-size="13.5" fill="#1f2937">Mover fee = 90% of mover-performed lines, rounded up to</text>
-<text x="1354" y="506" font-size="13.5" fill="#1f2937">S$5 per job</text>
-<text x="1336" y="525" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="525" font-size="13.5" fill="#1f2937">Warehouse receiving labour kept 100% by EcoStorage</text>
+<text x="1354" y="487" font-size="13.5" fill="#1f2937">Customer quote-photo upload</text>
+<text x="1336" y="506" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1354" y="506" font-size="13.5" fill="#1f2937">Mover fee = 90% of mover-performed lines, rounded up to</text>
+<text x="1354" y="525" font-size="13.5" fill="#1f2937">S$5 per job</text>
 <text x="1336" y="544" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="544" font-size="13.5" fill="#1f2937">Editable until closed; every change logged</text>
-<rect x="1320" y="620" width="470" height="271" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
-<rect x="1320" y="620" width="8" height="271" rx="4" fill="#ea580c"/>
-<text x="1336" y="656" font-size="21" font-weight="700" fill="#111827">Billing &amp; Finance</text>
-<rect x="1741.2" y="639" width="32.8" height="23" rx="11" fill="#0f766e"/><text x="1757.6" y="655" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">v1</text>
-<text x="1336" y="675" font-size="13.5" font-style="italic" fill="#374151">Goal: One-look billing status for every customer.</text>
-<text x="1336" y="704" font-size="13" font-weight="700" fill="#475569" letter-spacing="0.5">FUNCTIONS</text>
-<text x="1336" y="723" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="723" font-size="13.5" fill="#1f2937">Invoices with running numbers</text>
+<text x="1354" y="544" font-size="13.5" fill="#1f2937">Warehouse receiving labour kept 100% by EcoStorage</text>
+<text x="1336" y="563" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1354" y="563" font-size="13.5" fill="#1f2937">Editable until closed; every change logged</text>
+<rect x="1320" y="639" width="470" height="309" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+<rect x="1320" y="639" width="8" height="309" rx="4" fill="#ea580c"/>
+<text x="1336" y="675" font-size="21" font-weight="700" fill="#111827">Billing &amp; Finance</text>
+<rect x="1741.2" y="658" width="32.8" height="23" rx="11" fill="#0f766e"/><text x="1757.6" y="674" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">v1</text>
+<text x="1336" y="694" font-size="13.5" font-style="italic" fill="#374151">Goal: One-look billing status for every customer.</text>
+<text x="1336" y="723" font-size="13" font-weight="700" fill="#475569" letter-spacing="0.5">FUNCTIONS</text>
 <text x="1336" y="742" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="742" font-size="13.5" fill="#1f2937">Upfront: 1st month in advance + deposit + S$30 admin fee</text>
-<text x="1336" y="761" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="761" font-size="13.5" fill="#1f2937">Anniversary cycles from signature date; upgrades prorated</text>
-<text x="1354" y="780" font-size="13.5" fill="#1f2937">by day</text>
+<text x="1354" y="742" font-size="13.5" fill="#1f2937">Quotations with editable lines; one click converts to</text>
+<text x="1354" y="761" font-size="13.5" fill="#1f2937">invoice</text>
+<text x="1336" y="780" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1354" y="780" font-size="13.5" fill="#1f2937">Invoices with running numbers</text>
 <text x="1336" y="799" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="799" font-size="13.5" fill="#1f2937">PayNow QR on every invoice (card payments in v2)</text>
+<text x="1354" y="799" font-size="13.5" fill="#1f2937">Upfront: 1st month in advance + deposit + S$30 admin fee</text>
 <text x="1336" y="818" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="818" font-size="13.5" fill="#1f2937">Paid / part-paid / disputed / written off</text>
-<text x="1336" y="837" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="837" font-size="13.5" fill="#1f2937">Late fees at 30 / 45 / 60 / 75 days</text>
+<text x="1354" y="818" font-size="13.5" fill="#1f2937">Anniversary cycles from signature date; upgrades prorated</text>
+<text x="1354" y="837" font-size="13.5" fill="#1f2937">by day</text>
 <text x="1336" y="856" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="856" font-size="13.5" fill="#1f2937">One-click WhatsApp / email: invoice, chaser, termination</text>
+<text x="1354" y="856" font-size="13.5" fill="#1f2937">PayNow QR on every invoice (card payments in v2)</text>
 <text x="1336" y="875" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="875" font-size="13.5" fill="#1f2937">Corrections only by credit note</text>
-<rect x="1320" y="951" width="470" height="176" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
-<rect x="1320" y="951" width="8" height="176" rx="4" fill="#ea580c"/>
-<text x="1336" y="987" font-size="21" font-weight="700" fill="#111827">Books &amp; Reports</text>
-<rect x="1741.2" y="970" width="32.8" height="23" rx="11" fill="#0f766e"/><text x="1757.6" y="986" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">v1</text>
-<text x="1336" y="1006" font-size="13.5" font-style="italic" fill="#374151">Goal: Bookkeeping inside Novac, no Xero.</text>
-<text x="1336" y="1035" font-size="13" font-weight="700" fill="#475569" letter-spacing="0.5">FUNCTIONS</text>
-<text x="1336" y="1054" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="1054" font-size="13.5" fill="#1f2937">Expenses by line item, multi-image receipt upload</text>
-<text x="1336" y="1073" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="1073" font-size="13.5" fill="#1f2937">Bank statement import (MariBank CSV), suggested matches</text>
-<text x="1336" y="1092" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="1092" font-size="13.5" fill="#1f2937">Monthly: revenue, overdue, deposits held, payouts owed</text>
+<text x="1354" y="875" font-size="13.5" fill="#1f2937">Paid / part-paid / disputed / written off</text>
+<text x="1336" y="894" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1354" y="894" font-size="13.5" fill="#1f2937">Late fees at 30 / 45 / 60 / 75 days</text>
+<text x="1336" y="913" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1354" y="913" font-size="13.5" fill="#1f2937">One-click WhatsApp / email: invoice, chaser, termination</text>
+<text x="1336" y="932" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1354" y="932" font-size="13.5" fill="#1f2937">Corrections only by credit note</text>
+<rect x="1320" y="1008" width="470" height="176" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+<rect x="1320" y="1008" width="8" height="176" rx="4" fill="#ea580c"/>
+<text x="1336" y="1044" font-size="21" font-weight="700" fill="#111827">Books &amp; Reports</text>
+<rect x="1741.2" y="1027" width="32.8" height="23" rx="11" fill="#0f766e"/><text x="1757.6" y="1043" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">v1</text>
+<text x="1336" y="1063" font-size="13.5" font-style="italic" fill="#374151">Goal: Bookkeeping inside Novac, no Xero.</text>
+<text x="1336" y="1092" font-size="13" font-weight="700" fill="#475569" letter-spacing="0.5">FUNCTIONS</text>
 <text x="1336" y="1111" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1354" y="1111" font-size="13.5" fill="#1f2937">Export for the accountant (year-end)</text>
-<rect x="1960" y="270" width="470" height="291" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
-<rect x="1960" y="270" width="8" height="291" rx="4" fill="#2563eb"/>
+<text x="1354" y="1111" font-size="13.5" fill="#1f2937">Expenses by line item, multi-image receipt upload</text>
+<text x="1336" y="1130" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1354" y="1130" font-size="13.5" fill="#1f2937">Bank statement import (MariBank CSV), suggested matches</text>
+<text x="1336" y="1149" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1354" y="1149" font-size="13.5" fill="#1f2937">Monthly: revenue, overdue, deposits held, payouts owed</text>
+<text x="1336" y="1168" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1354" y="1168" font-size="13.5" fill="#1f2937">Export for the accountant (year-end)</text>
+<rect x="1960" y="270" width="470" height="329" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+<rect x="1960" y="270" width="8" height="329" rx="4" fill="#2563eb"/>
 <text x="1976" y="306" font-size="21" font-weight="700" fill="#111827">Flow</text>
 <rect x="2262.8" y="289" width="151.20000000000002" height="23" rx="11" fill="#0f766e"/><text x="2338.4" y="305" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">v1 links · v2 auto</text>
 <text x="1976" y="326" font-size="13" fill="#6b7280">Mover / driver broadcast</text>
@@ -231,38 +241,43 @@
 <text x="1994" y="526" font-size="13.5" fill="#1f2937">Blacklist with offence notes</text>
 <text x="1976" y="545" font-size="13.5" font-weight="700" fill="#475569">•</text>
 <text x="1994" y="545" font-size="13.5" fill="#1f2937">Accepting a job = agreeing to its terms and fee</text>
-<rect x="1960" y="621" width="470" height="214" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
-<rect x="1960" y="621" width="8" height="214" rx="4" fill="#ea580c"/>
-<text x="1976" y="657" font-size="21" font-weight="700" fill="#111827">Payouts</text>
-<rect x="2381.2" y="640" width="32.8" height="23" rx="11" fill="#0f766e"/><text x="2397.6" y="656" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">v1</text>
-<text x="1976" y="676" font-size="13.5" font-style="italic" fill="#374151">Goal: Monthly tallies for partners and affiliates.</text>
-<text x="1976" y="705" font-size="13" font-weight="700" fill="#475569" letter-spacing="0.5">FUNCTIONS</text>
-<text x="1976" y="724" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1994" y="724" font-size="13.5" fill="#1f2937">Mover statement each month (end of month, configurable)</text>
-<text x="1976" y="743" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1994" y="743" font-size="13.5" fill="#1f2937">Unpaid customer amounts roll over</text>
+<text x="1976" y="564" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1994" y="564" font-size="13.5" fill="#1f2937">Assignment log: who accepted each job, when, from which</text>
+<text x="1994" y="583" font-size="13.5" fill="#1f2937">number</text>
+<rect x="1960" y="659" width="470" height="233" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+<rect x="1960" y="659" width="8" height="233" rx="4" fill="#ea580c"/>
+<text x="1976" y="695" font-size="21" font-weight="700" fill="#111827">Payouts</text>
+<rect x="2381.2" y="678" width="32.8" height="23" rx="11" fill="#0f766e"/><text x="2397.6" y="694" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">v1</text>
+<text x="1976" y="714" font-size="13.5" font-style="italic" fill="#374151">Goal: Monthly tallies for partners and affiliates.</text>
+<text x="1976" y="743" font-size="13" font-weight="700" fill="#475569" letter-spacing="0.5">FUNCTIONS</text>
 <text x="1976" y="762" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1994" y="762" font-size="13.5" fill="#1f2937">Held while a case is not closed</text>
+<text x="1994" y="762" font-size="13.5" fill="#1f2937">Mover statement each month (end of month, configurable)</text>
 <text x="1976" y="781" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1994" y="781" font-size="13.5" fill="#1f2937">Damage costs split 20 / 80 by default, editable</text>
+<text x="1994" y="781" font-size="13.5" fill="#1f2937">Unpaid customer amounts roll over</text>
 <text x="1976" y="800" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1994" y="800" font-size="13.5" fill="#1f2937">Affiliate commissions: qualified → paid</text>
-<text x="1976" y="819" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1994" y="819" font-size="13.5" fill="#1f2937">Mark paid with payment reference</text>
-<rect x="1960" y="895" width="470" height="176" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
-<rect x="1960" y="895" width="8" height="176" rx="4" fill="#9333ea"/>
-<text x="1976" y="931" font-size="21" font-weight="700" fill="#111827">Service Reports</text>
-<rect x="2381.2" y="914" width="32.8" height="23" rx="11" fill="#0f766e"/><text x="2397.6" y="930" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">v1</text>
-<text x="1976" y="950" font-size="13.5" font-style="italic" fill="#374151">Goal: Proof of service, sent automatically.</text>
-<text x="1976" y="979" font-size="13" font-weight="700" fill="#475569" letter-spacing="0.5">FUNCTIONS</text>
-<text x="1976" y="998" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1994" y="998" font-size="13.5" fill="#1f2937">Generated when the customer signs on site</text>
-<text x="1976" y="1017" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1994" y="1017" font-size="13.5" fill="#1f2937">Items, photos, signature, terms</text>
-<text x="1976" y="1036" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1994" y="1036" font-size="13.5" fill="#1f2937">Sent by email / WhatsApp link</text>
+<text x="1994" y="800" font-size="13.5" fill="#1f2937">Held while a case is not closed; open cases listed per</text>
+<text x="1994" y="819" font-size="13.5" fill="#1f2937">partner / affiliate</text>
+<text x="1976" y="838" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1994" y="838" font-size="13.5" fill="#1f2937">Damage costs split 20 / 80 by default, editable</text>
+<text x="1976" y="857" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1994" y="857" font-size="13.5" fill="#1f2937">Affiliate commissions: qualified → paid</text>
+<text x="1976" y="876" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1994" y="876" font-size="13.5" fill="#1f2937">Mark paid with payment reference</text>
+<rect x="1960" y="952" width="470" height="195" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+<rect x="1960" y="952" width="8" height="195" rx="4" fill="#9333ea"/>
+<text x="1976" y="988" font-size="21" font-weight="700" fill="#111827">Service Reports</text>
+<rect x="2381.2" y="971" width="32.8" height="23" rx="11" fill="#0f766e"/><text x="2397.6" y="987" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">v1</text>
+<text x="1976" y="1007" font-size="13.5" font-style="italic" fill="#374151">Goal: Proof of service, sent automatically.</text>
+<text x="1976" y="1036" font-size="13" font-weight="700" fill="#475569" letter-spacing="0.5">FUNCTIONS</text>
 <text x="1976" y="1055" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="1994" y="1055" font-size="13.5" fill="#1f2937">Signature date starts billing</text>
+<text x="1994" y="1055" font-size="13.5" fill="#1f2937">Sent automatically when the on-site job is signed off</text>
+<text x="1976" y="1074" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1994" y="1074" font-size="13.5" fill="#1f2937">Items, photos, customer + partner e-signatures, terms</text>
+<text x="1976" y="1093" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1994" y="1093" font-size="13.5" fill="#1f2937">Same link quietly updated when items are received at the</text>
+<text x="1994" y="1112" font-size="13.5" fill="#1f2937">warehouse</text>
+<text x="1976" y="1131" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="1994" y="1131" font-size="13.5" fill="#1f2937">Signature date starts billing</text>
 <rect x="2600" y="270" width="470" height="252" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
 <rect x="2600" y="270" width="8" height="252" rx="4" fill="#9333ea"/>
 <text x="2616" y="306" font-size="21" font-weight="700" fill="#111827">Mover / Driver Job Page</text>
@@ -300,8 +315,8 @@
 <text x="2634" y="742" font-size="13.5" fill="#1f2937">Inbound and outbound records kept for claims</text>
 <text x="2616" y="761" font-size="13.5" font-weight="700" fill="#475569">•</text>
 <text x="2634" y="761" font-size="13.5" fill="#1f2937">Master admin only; each customer sees only their own</text>
-<rect x="2600" y="837" width="470" height="195" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
-<rect x="2600" y="837" width="8" height="195" rx="4" fill="#9333ea"/>
+<rect x="2600" y="837" width="470" height="233" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+<rect x="2600" y="837" width="8" height="233" rx="4" fill="#9333ea"/>
 <text x="2616" y="873" font-size="21" font-weight="700" fill="#111827">User Portal</text>
 <rect x="3021.2" y="856" width="32.8" height="23" rx="11" fill="#7c3aed"/><text x="3037.6" y="872" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle">v3</text>
 <text x="2616" y="892" font-size="13.5" font-style="italic" fill="#374151">Goal: Customers see their items and bills in one place.</text>
@@ -315,34 +330,37 @@
 <text x="2616" y="997" font-size="13.5" font-weight="700" fill="#475569">•</text>
 <text x="2634" y="997" font-size="13.5" fill="#1f2937">Helpdesk to admin email</text>
 <text x="2616" y="1016" font-size="13.5" font-weight="700" fill="#475569">•</text>
-<text x="2634" y="1016" font-size="13.5" fill="#1f2937">Reminder 5 days before billing</text>
+<text x="2634" y="1016" font-size="13.5" fill="#1f2937">Log in with a one-time code sent to the customer&#x27;s email</text>
+<text x="2616" y="1035" font-size="13.5" font-weight="700" fill="#475569">•</text>
+<text x="2634" y="1035" font-size="13.5" fill="#1f2937">Billing reminder 5 days before: email + countdown on</text>
+<text x="2634" y="1054" font-size="13.5" fill="#1f2937">screen</text>
 <rect x="535.5" y="357.0" width="119.0" height="40" rx="6" fill="#ffffff" stroke="#16a34a" stroke-width="1.5"/>
 <text x="595.0" y="373.0" font-size="12.5" fill="#16a34a" font-weight="700" text-anchor="middle">referred leads,</text>
 <text x="595.0" y="390.0" font-size="12.5" fill="#16a34a" font-weight="700" text-anchor="middle">applications</text>
 <rect x="556.5" y="442.5" width="77.0" height="23" rx="6" fill="#ffffff" stroke="#16a34a" stroke-width="1.5"/>
 <text x="595.0" y="458.5" font-size="12.5" fill="#16a34a" font-weight="700" text-anchor="middle">enquiries</text>
-<rect x="1200.0" y="753.5" width="70.0" height="23" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="1235.0" y="769.5" font-size="12.5" fill="#2563eb" font-weight="700" text-anchor="middle">customer</text>
-<rect x="1836.5" y="403.5" width="77.0" height="23" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="1875.0" y="419.5" font-size="12.5" fill="#2563eb" font-weight="700" text-anchor="middle">broadcast</text>
-<rect x="2480.0" y="404.0" width="70.0" height="23" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="2515.0" y="420.0" font-size="12.5" fill="#2563eb" font-weight="700" text-anchor="middle">job link</text>
+<rect x="1200.0" y="810.5" width="70.0" height="23" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="1235.0" y="826.5" font-size="12.5" fill="#2563eb" font-weight="700" text-anchor="middle">customer</text>
+<rect x="1836.5" y="413.0" width="77.0" height="23" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="1875.0" y="429.0" font-size="12.5" fill="#2563eb" font-weight="700" text-anchor="middle">broadcast</text>
+<rect x="2480.0" y="423.0" width="70.0" height="23" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="2515.0" y="439.0" font-size="12.5" fill="#2563eb" font-weight="700" text-anchor="middle">job link</text>
 <rect x="2779.0" y="540.5" width="112.0" height="23" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
 <text x="2835.0" y="556.5" font-size="12.5" fill="#2563eb" font-weight="700" text-anchor="middle">photos + flags</text>
-<rect x="2476.5" y="433.0" width="77.0" height="23" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="2515.0" y="449.0" font-size="12.5" fill="#2563eb" font-weight="700" text-anchor="middle">signature</text>
-<rect x="1509.5" y="578.5" width="91.0" height="23" rx="6" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
-<text x="1555.0" y="594.5" font-size="12.5" fill="#ea580c" font-weight="700" text-anchor="middle">job charges</text>
-<rect x="1819.0" y="971.5" width="112.0" height="23" rx="6" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
-<text x="1875.0" y="987.5" font-size="12.5" fill="#ea580c" font-weight="700" text-anchor="middle">billing starts</text>
-<rect x="1808.5" y="744.0" width="133.0" height="23" rx="6" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
-<text x="1875.0" y="760.0" font-size="12.5" fill="#ea580c" font-weight="700" text-anchor="middle">paid / not closed</text>
-<rect x="1182.5" y="782.5" width="105.0" height="23" rx="6" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
-<text x="1235.0" y="798.5" font-size="12.5" fill="#ea580c" font-weight="700" text-anchor="middle">good standing</text>
-<rect x="1815.5" y="716.5" width="119.0" height="23" rx="6" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
-<text x="1875.0" y="732.5" font-size="12.5" fill="#ea580c" font-weight="700" text-anchor="middle">commission paid</text>
+<rect x="2476.5" y="452.0" width="77.0" height="23" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="2515.0" y="468.0" font-size="12.5" fill="#2563eb" font-weight="700" text-anchor="middle">signature</text>
+<rect x="1509.5" y="597.5" width="91.0" height="23" rx="6" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+<text x="1555.0" y="613.5" font-size="12.5" fill="#ea580c" font-weight="700" text-anchor="middle">job charges</text>
+<rect x="1819.0" y="1038.0" width="112.0" height="23" rx="6" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+<text x="1875.0" y="1054.0" font-size="12.5" fill="#ea580c" font-weight="700" text-anchor="middle">billing starts</text>
+<rect x="1808.5" y="782.0" width="133.0" height="23" rx="6" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+<text x="1875.0" y="798.0" font-size="12.5" fill="#ea580c" font-weight="700" text-anchor="middle">paid / not closed</text>
+<rect x="1182.5" y="782.0" width="105.0" height="23" rx="6" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+<text x="1235.0" y="798.0" font-size="12.5" fill="#ea580c" font-weight="700" text-anchor="middle">good standing</text>
+<rect x="1815.5" y="811.0" width="119.0" height="23" rx="6" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+<text x="1875.0" y="827.0" font-size="12.5" fill="#ea580c" font-weight="700" text-anchor="middle">commission paid</text>
 <rect x="2793.0" y="795.5" width="84.0" height="23" rx="6" fill="#ffffff" stroke="#9333ea" stroke-width="1.5"/>
 <text x="2835.0" y="811.5" font-size="12.5" fill="#9333ea" font-weight="700" text-anchor="middle">own photos</text>
-<rect x="2466.0" y="923.0" width="98.0" height="23" rx="6" fill="#ffffff" stroke="#9333ea" stroke-width="1.5"/>
-<text x="2515.0" y="939.0" font-size="12.5" fill="#9333ea" font-weight="700" text-anchor="middle">own invoices</text>
+<rect x="2466.0" y="942.0" width="98.0" height="23" rx="6" fill="#ffffff" stroke="#9333ea" stroke-width="1.5"/>
+<text x="2515.0" y="958.0" font-size="12.5" fill="#9333ea" font-weight="700" text-anchor="middle">own invoices</text>
 </svg>
