@@ -12,10 +12,10 @@
 - **"Referral Code"** — the unique promo code issued to an Affiliate.
 - **"Referred Customer"** — a new EcoStorage customer attributed to an
   Affiliate under Section 3.
-- **"Qualifying Period"** — 60 consecutive days starting from the Referred
-  Customer's storage start date, or, if the Referred Customer's storage
-  ends earlier, the period up to their successful move-out from the
-  warehouse.
+- **"Qualifying Period"** — the period from the Referred Customer's storage
+  start date until EcoStorage receives their **second monthly storage
+  payment** (normally about 30 days), or, if the Referred Customer moves out
+  before making a second payment, until their successful move-out.
 - **"Qualified Referral"** — a Referred Customer who completes the Qualifying
   Period in Good Standing (Section 5).
 
@@ -62,10 +62,11 @@ subject to EcoStorage's standard customer terms.
 
 5.1 Commission is **held** and becomes payable only once the Referred
 Customer completes the Qualifying Period in **Good Standing**:
-  (a) **standard case** — 60 days from the storage start date; or
-  (b) **storage of less than 60 days** — upon the Referred Customer's
-  **successful outbound** (all items moved out of the warehouse, signed
-  off, and all amounts paid in full).
+  (a) **standard case** — when EcoStorage receives the Referred Customer's
+  **second monthly storage payment**, in full and on time; or
+  (b) **short stay** — if the Referred Customer moves out before making a
+  second monthly payment, upon their **successful outbound** (all items
+  moved out of the warehouse, signed off, and all amounts paid in full).
 
 5.2 **Good Standing** means that throughout the Qualifying Period the Referred
 Customer:
@@ -104,9 +105,9 @@ charges, add-ons, and any free or discounted month. Commission is based on
 the First Month's Rent only. Later upgrades, downgrades or additional
 services do not change it.
 
-6.2A **Short stays.** If the Referred Customer's items are stored for fewer
-than **60 days**, measured by the actual period stored (not the plan
-chosen), commission is a fixed **S$5 for every 20 sq ft** of storage
+6.2A **Short stays.** If the Referred Customer moves out before making a
+second monthly storage payment (that is, stores for less than about 60
+days), regardless of the plan chosen, commission is a fixed **S$5 for every 20 sq ft** of storage
 rented, or the tier percentage under 6.1 if that is lower. Short-stay
 referrals do not count towards the number of Qualified Referrals used to
 set the Affiliate's tier.
@@ -119,11 +120,18 @@ storage fee, or apply the short-stay rate in 6.2A.
 6.3 Tier upgrades apply to referrals qualifying after the upgrade; they are
 not applied retroactively.
 
-6.4 Commission is paid **30 days after the referral qualifies** under 5.1
-(i.e. 30 days after the 60-day Qualifying Period ends, or 30 days after a
-short-term customer's successful outbound), via **[PayNow / bank transfer]**.
+6.4 Commission is paid **14 days after the referral qualifies** under 5.1
+(i.e. 14 days after the second monthly payment is received, or 14 days
+after a short-stay customer's successful outbound), via **[PayNow / bank
+transfer]**. The Affiliate portal shows the expected payout date for each
+referral.
 If the Referred Customer defaults on any amount relating to the Qualifying
 Period before payout, the commission is forfeited.
+
+6.4B **Reversed payments.** If a payment that a commission was based on is
+later reversed, charged back or refunded, EcoStorage may deduct the
+commission paid on it from the Affiliate's future commissions, or ask the
+Affiliate to repay it.
 
 6.4A **Cases not closed.** If any amount owed by the Referred Customer is
 unpaid, disputed or under negotiation, the case is "not closed". While a

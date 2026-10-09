@@ -240,6 +240,20 @@ section) is finalized.
   (who accepted, when, which number, reassignments); portal billing
   reminder = email + on-screen countdown. Accounts move to
   jonnylim@ecostorage.sg, but NOT yet (user not ready to build).
+- (2026-10-09) **Affiliate payout timing changed**: qualifies when the 2nd
+  monthly storage payment is received in full and on time; paid 14 days
+  later (~day 44 best case). Short stay = moves out before a 2nd payment
+  (fixed S$5/20 sq ft, paid 14 days after outbound). With anniversary
+  billing and no refunds, a 2nd payment = ~60 days paid, so this matches
+  the old 60-day intent. New 6.4B: reversed/charged-back payments can be
+  deducted from future commissions. DB qualify_signup() still uses the
+  60-day rule; change it with Billing (needs payment records). Countdown
+  ("2nd payment due X · expected payout Y") also built with Billing.
+- Cards/recurring (v2): needs registered company for a merchant account.
+  Upfront payment via PayNow (no chargebacks); cards optional for monthly
+  auto-charge with explicit mandate in the customer terms. Chargeback →
+  case not closed + 6.4B. Evidence pack (signatures, photos, service
+  report) from Vault for disputes.
 - Maps: docs/novac/novac-functional-map.(svg|png) and
   docs/novac/novac-technical-map.(svg|png).
 
