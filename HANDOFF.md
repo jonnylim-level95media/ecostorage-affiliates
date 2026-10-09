@@ -254,6 +254,14 @@ section) is finalized.
   auto-charge with explicit mandate in the customer terms. Chargeback →
   case not closed + 6.4B. Evidence pack (signatures, photos, service
   report) from Vault for disputes.
+- (2026-10-10) Job orders hold BOTH a pickup and a drop-off address (each
+  postal code → OneMap); Flow broadcast shows both.
+- Email plan: one Resend account + one verified domain (ecostorage.sg)
+  serves the main site, Novac app emails and Supabase Auth SMTP, each with
+  its own sending-only API key. Resend's SPF/MX go on the `send.`
+  subdomain, so they don't clash with Zoho's root SPF/MX. Current DNS
+  (Exabytes, ns18x.mschosting.com): Zoho MX + root SPF include:zohomail.sg
+  + Zoho DKIM (zmail._domainkey); no DMARC yet.
 - Maps: docs/novac/novac-functional-map.(svg|png) and
   docs/novac/novac-technical-map.(svg|png).
 
