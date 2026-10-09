@@ -208,6 +208,26 @@ section) is finalized.
 - Data: no purge; state a retention reason (claims) in the privacy policy.
 - Infra goal: start Novac on free tiers only; migrate accounts to an
   @ecostorage.sg identity.
+- (2026-10-09) Extras priced from an EcoStorage price list; job lines are
+  invoice-style (description + amount editable per job, e.g. TV size).
+  Mover sees lines + their fee, never customer amounts.
+- Damage claims: EcoStorage negotiates for all parties; default split of
+  the cost 20% EcoStorage / 80% partner (of the partner's 90% share),
+  editable per case.
+- Partner tally around the last Thu/Fri of the month (no fixed rule; make
+  it a setting). Non-solicitation clause (light). Partners may
+  subcontract, but the partner entity that accepts the Flow job is legally
+  responsible; accepting a broadcast = agreeing to that job's terms + fee.
+- "Substantial upgrade" deposit = manual call; Novac tracks upgrades
+  (size change, deposit taken or not, outcome) to derive rules later.
+- Bank: MariBank FlexiBiz (not opened yet) → CSV statement import.
+- Email: Resend for app emails from a subdomain of ecostorage.sg (also as
+  Supabase Auth SMTP); Zoho stays for human inboxes (hello@, jonnylim@).
+- Hosting stays on Vercel (Hobby while building with zero customers; Pro
+  when commercial). Main site: keep its own repo; optionally transfer to
+  the @ecostorage.sg GitHub org later (domain unchanged, no SEO impact).
+- Maps: docs/novac/novac-functional-map.(svg|png) and
+  docs/novac/novac-technical-map.(svg|png).
 
 ## Build progress
 
